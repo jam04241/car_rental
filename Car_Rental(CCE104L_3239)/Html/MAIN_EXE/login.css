@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    margin-left: 28rem;
+    padding-top: 50px;
+
+}
+.log-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 27%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: aqua;
+    box-shadow: 10px 5px;
+    width: 50%;
+
+}
+
+body{
+    position: relative;
+    background: rgb(140, 140, 147);
+
+}
+
+.log-box, #email, #password, #btn, section{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+#email, #password, #btn, section{
+    height: 10%;
+    width: 70%;
+
+}
+#email, #password, #btn{
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    
+}
+#login{
+    text-decoration: none;
+}
+p{
+    padding-left: 50px;
+}
+/*
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;    
+    height: 500px;
+    padding: 44px;
+    
+   
+}
+.form{
+    text-align: center;
+    margin: 30px 0;
+    position: absolute;
+    bottom: 13%;
+    right: 622px;
+
+}
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #1a1717;
+    border-radius: 10px;
+}
+
+.forgot{
+    width: 260px;
+    margin: 5px 0;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 28%;
+    left: 635px;
+    
+}
+
+.log-box{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;   
+    top: 210px;
+    right: 653px;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+
+}
+
+.btn{
+    text-align: center;
+    position: absolute;
+    bottom: 35%;
+    left: 659px;
+    padding: 5px;
+}
+
+.btn{
+    width: 210px;
+    padding: 7px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 28%;
+    right: 46%;
+}
+
+.sign{
+    width: 200px;
+    margin: 5px 0;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 22%;
+    left: 670px;
+}*/
