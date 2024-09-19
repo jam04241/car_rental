@@ -1,59 +1,113 @@
 .main{
-    width: 100%;
-    /*background: white;*/
-    background-position: center;
-    background-size: cover;
-    /*height: 120vh;*/
-    position: relative;
-} 
+  width: 100%;
+}
 .navbar{
-    width: 100%;
-    height: 105px;
-    /*margin: 10%,10%,10%,50%;*/
-    display: flex;
-    /*padding-left: 40px;*/
-    align-content: center;
-    background: rgb(38, 6, 152);
-    padding-bottom: 25px;
-    border-radius: 100px;
-    /*border: 5px solid rgb(0, 0, 0);*/
-    
+  width: 100%;
+  height: 105px;
+  /*margin: 10%,10%,10%,50%;*/
+  display: flex;
+  /*padding-left: 40px;*/
+  background: rgb(38, 6, 152);
+  /*padding-bottom: 25px;*/
+  border-radius: 100px;
+  
 }
 
-h2{
-    font-size: 50px;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 2rem;
+h2, #title{
+  font-size: 50px;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
+.icon{
+
+  /*color: rgb(255, 255, 255);*/
+  font-size: 30px;
+  font-family: Arial;
+  padding: 20px;  
+  float: left;
+  padding-top: 40px; 
+  
+}
 ul{
-    float: left;
-    display: grid;
-    margin-top: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-     
+  float: left;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+   
 }
 ul li{
-    list-style: none;
-    margin-left: 2rem;
-    /*margin-top: 20px;*/
-    font-size: 26px;
-    padding-left: 5rem;
-    /*padding-right: 37px;*/
-    
+  list-style: none;
+  margin-left: 2rem;
+  /*margin-top: 20px;*/
+  font-size: 26px;
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  /*padding-right: 37px;*/
+  
 }
 
 ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{
-    color: rgb(0, 0, 0);
-  }
+  color: rgb(0, 0, 0);
+}
+
+#content{
+  font-size: 30px;
   
+}
+.info{
+  margin-top: 7rem;
+  margin-left: 15%;
+  margin-right: 50rem;
+
+}
+
+#par{
+  font-size: 20px;
+  text-align: justify;
+  
+}
+
+#rent_btn{
+  width: 160px;
+  height: 40px;
+  background: blue;
+  border: none;
+  font-family: Arial;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border-radius: 30rem;
+  border: 3px solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.4 ease-in-out;
+
+}
+#rent{
+  color:aliceblue;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+#rent_btn{
+  text-decoration: none;
+  transition: 0.3 ease;
+
+}
+#rent_btn :hover{
+color: rgb(0, 128, 109);
+}
+
+
+
