@@ -1,90 +1,94 @@
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
+}
+.logo-wrapper{
+    height: 20vh;
+}
+.logo-wrapper, #car_logo{
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
 }
 
 body{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    background: rgb(140, 140, 147);
-
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* Ensures the container and video are positioned correctly */
 }
 
+.bgvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Sends the video behind the content */
+    overflow: hidden;
+}
+.bgvideo video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centers the video */
+    object-fit: cover;        /* Ensures the video covers the entire viewport */
+}
 .container{
-    padding: 60px;
+    padding: 50px 60px 40px 60px;
     width: 100%;
-    height: 600px;
     border-radius: 20px;
-    background-color: aqua;
-    box-shadow: 10px 8px;  
+    background-color: rgba(1, 27, 33, 0.8);  /* Add transparency for better video visibility */
+    box-shadow: 10px 8px;
+    text-align: center;
+    z-index: 1;  /* Keeps the container above the video */
 }
 
-h2,input,#Gender_Select,#gender, button,option{
-    margin-left: 20px;
+input, #gender, button, option {
+    color: white;
+    background-color: rgba(70, 114, 123, 0.8);
+    padding-right: 50px;
     margin-top: 20px;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     height: 40px;
     border-radius: 1rem;
-} 
+    padding-left: 1rem;
+}
+input::placeholder,#Gender_Select::placeholder{
+    color: #ffff;
+}
+input{
+    text-align: left;
+}
+#Gender_Select{
+    color: #ffff;
+    background-color: rgba(70, 114, 123, 0.8);
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1rem;
+}
+
+#Login_in{
+    display: block;
+    margin-top: 1rem;
+    margin-left: 4px;
+}
+
 a{
+    color: #ffff;
+    margin-left: 2.5rem;
     text-decoration: none;
 }
-/*
-.form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 300px;    
-    height: 400px;
-    padding: auto;
-    
-   
-}
-.form{
-    text-align: center;
-    margin: 40px 0;
-    position: absolute;
-    bottom: 16%;
-    right: 620.5px;
-
-}
-.form input {
-    width: 100%;
-    padding: 13px;
-    margin: 0;
-    border: 2px solid #1a1717;
-    border-radius: 10px;
-}
-
-.form select{
-    width: 100%;
-    padding: 13px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.btn{
-    text-align: center;
-    position: absolute;
-    bottom: 116px;
-    left: 614px;
-    padding: 7px;
-}
-
-.btn{
-    width: 10%;
-    padding: 6px;
-    margin: 10px 0;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    font-size: 19px;
-}
-.btn{
-    background-color: rgb(62, 245, 62);
-    font-style: bold;
-    color: black;
-    text-decoration: underline;
-}*/

@@ -1,14 +1,16 @@
+*{
+  margin: 0;
+  padding: auto;
+}
 .main{
   width: 100%;
-
+  
 }
 .navbar{
   width: 100%;
   height: 105px;
   display: flex;
   background: rgb(38, 6, 152);
-  border-radius: 100px;
-  
 }
 
 h2, #title{

@@ -1,0 +1,87 @@
+*{
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffff;
+}
+li{
+    margin-right: 10%;
+    width:fit-content;
+    
+}
+
+a{
+    font-size: 25px;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    position: relative;
+    display: inline-block;
+
+}
+.drop_service, .drop_profile{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.drop_profile li,.drop_service li{
+    margin-bottom: 30px;
+}
+
+.drop_service li:last-child, .drop_profile li:last-child {
+    margin-bottom: 10px;
+}
+
+.drop_service a, .drop_profile a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.drop_service a:hover, .drop_profile a:hover {
+    background-color: rgb(26, 3, 3);
+    color: #ffff;
+}
+
+.contact_class {
+    position: relative;
+}
+
+.drop_profile{
+    right: 0;
+    top: 100%;
+}
+
+.drop_service{
+    left: 0;
+    top: 100%;
+}
+
+li:hover > .drop_service, li:hover .drop_profile{
+    display: block;
+}
+
+.contact_class:hover .drop_profile {
+    display: block;
+}

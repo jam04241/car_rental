@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Car Rental Business</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="main">
+        <div class="bgvideo">
+            <video autoplay loop playsinline id="video">
+                <source src="/CACA/Car_Rental(CCE104L_3239)/Html/bg_video/video_bg(1).webm">
+            </video>
+        </div>
+        <div class="bg-overlay"></div>
 
-    <div class="log-box">
-        <h1>ONLINE CAR RENTAL</h1>
-            <input type="email" id="email" name="email" placeholder="Enter Email" autocomplete="off" required>
-            <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required>
+        <div class="log-box">
+            <div class="logo-wrapper">
+                <img id="car_logo" src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/Car Logo/Ruben_Car_Rental(7).png">
+            </div>
             <section>
-                <input type="checkbox" id="checkbox">
-                <label for="check" id="check_btn">Remember me</label>
-            </section>
-        <button id="btn"><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Home_html/Home.html" id="login">Login</a></button>
-        <a href="#" id="forget">Forgot Password?</a>
-    
-            <section>
-                <p>Don't have an account? 
-                <a href="/CACA/Car_Rental(CCE104L_3239)/Html/MAIN_EXE/signUp.html">Sign in</a>
-            </p>
+                <input type="email" id="email" name="email" placeholder="Enter Email" autocomplete="off" required>
+                <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required>
+
+            <div class="checkbox">  
+                <p id="remember"><input type="checkbox" id="checkbox"> <label type="text" id="check_btn">Remember me</label>
+                </p>
+            </div>
+                <p id="login-container">
+                    <button id="btn" name="Login"><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Home_html/Home.html" id="login">Login</a></button>    
+                </p>
+            
                 
-            </section>
-
+                <a href="#" id="forget">Forgot Password?</a>
+                <p id="dont">
+                    Don't have an account?
+                    <a href="/CACA/Car_Rental(CCE104L_3239)/Html/MAIN_EXE/signUp.html">Sign in</a>
+                </p>
+            </section> 
         </div>
     </div>
 </body>

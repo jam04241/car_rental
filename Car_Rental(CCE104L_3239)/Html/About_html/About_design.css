@@ -1,67 +1,87 @@
-.main{
+*{
     width: 100%;
-  }
-  .navbar{
-    width: 100%;
-    height: 105px;
-    /*margin: 10%,10%,10%,50%;*/
-    display: flex;
-    /*padding-left: 40px;*/
-    background: rgb(38, 6, 152);
-    /*padding-bottom: 25px;*/
-    border-radius: 100px;
-    
-  }
-  
-  h2, #title{
-    font-size: 50px;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .icon{
-  
-    /*color: rgb(255, 255, 255);*/
-    font-size: 30px;
-    font-family: Arial;
-    padding: 20px;  
-    float: left;
-    padding-top: 40px; 
-    
-  }
-  ul{
-    float: left;
-    display: grid;
-    margin-top: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-     
-  }
-  ul li{
-    list-style: none;
-    margin-left: 2rem;
-    /*margin-top: 20px;*/
-    font-size: 26px;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-    /*padding-right: 37px;*/
-    
-  }
-  
-  ul li a{
+    margin: 0;
     text-decoration: none;
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-  }
-  
-  ul li a:hover{
-    color: rgb(0, 0, 0);
-  }
-  
-  
-  
-  
+    list-style-type: none;
+    color: #ffff;
+}
+li{
+    margin-right: 10%;
+    width:fit-content;
+    
+}
+
+a{
+    font-size: 25px;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    position: relative;
+    display: inline-block;
+
+}
+.drop_service, .drop_profile{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.drop_profile li,.drop_service li{
+    margin-bottom: 30px;
+}
+
+.drop_service li:last-child, .drop_profile li:last-child {
+    margin-bottom: 10px;
+}
+
+.drop_service a, .drop_profile a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.drop_service a:hover, .drop_profile a:hover{
+    background-color: rgb(0, 0, 0);
+    color: #ffff;
+}
+
+.contact_class {
+    position: relative;
+}
+
+.drop_profile{
+    right: 0;
+    top: 100%;
+}
+
+.drop_service{
+    left: 0;
+    top: 100%;
+}
+
+li:hover > .drop_service, li:hover .drop_profile{
+    display: block;
+}
+
+.contact_class:hover .drop_profile {
+    display: block;
+}
