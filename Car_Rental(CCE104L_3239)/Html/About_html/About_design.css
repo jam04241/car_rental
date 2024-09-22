@@ -1,14 +1,18 @@
 *{
+    box-sizing: border-box;
     width: 100%;
     margin: 0;
     text-decoration: none;
     list-style-type: none;
     color: #ffff;
 }
-li{
-    margin-right: 10%;
-    width:fit-content;
-    
+:root {
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
 }
 
 a{
@@ -19,12 +23,10 @@ a{
     background-color: rgba(1, 27, 33, 1);
     display: flex;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 #car-logo{
     width: 13rem; /* set a fixed width */
-    height: 100px; /* set a fixed height */
+    height: 125px; /* set a fixed height */
     object-fit: cover;/* ensure the image is scaled to fit the container */
 }
 #profile_icon{
@@ -33,55 +35,53 @@ a{
     object-fit: cover;/* ensure the image is scaled to fit the container */
 }
 .contact_class{
-    position: relative;
     display: inline-block;
-
+    position: relative;
 }
-.drop_service, .drop_profile{
+
+.drop_profile, .drop_service{
     display: none;
     position: absolute;
     background-color: rgba(1, 27, 33, 1);
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 1;
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
 }
 
-.drop_profile li,.drop_service li{
-    margin-bottom: 30px;
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
 }
 
-.drop_service li:last-child, .drop_profile li:last-child {
-    margin-bottom: 10px;
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
 }
 
-.drop_service a, .drop_profile a {
-    color: #ffff;
-    text-decoration: none;
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
-.drop_service a:hover, .drop_profile a:hover{
-    background-color: rgb(0, 0, 0);
-    color: #ffff;
-}
-
-.contact_class {
-    position: relative;
-}
-
-.drop_profile{
-    right: 0;
-    top: 100%;
-}
-
+/*drop down position*/
 .drop_service{
-    left: 0;
-    top: 100%;
+    margin-left: -50px;
+    margin-top: 65px;
 }
-
-li:hover > .drop_service, li:hover .drop_profile{
-    display: block;
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
 }
-
-.contact_class:hover .drop_profile {
-    display: block;
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 20px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+    background-color: rgb(255, 0, 0);
 }
