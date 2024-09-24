@@ -4,9 +4,9 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #ffff;
+    
 }
-:root {
+:root{
     font-size: 18px;
 }
 ul{
@@ -17,6 +17,7 @@ ul{
 
 a{
     font-size: 25px;
+    color: #ffff;
 }
 
 .topnav, .navbar{ 
@@ -84,4 +85,17 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 }
 #dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
     background-color: rgb(255, 0, 0);
+}
+
+.column-content{
+    background-color: rgb(178, 126, 227);
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-around;
+    color: black;   
+}
+
+#column-content1,#column-content2,#column-content3{
+    width: 20px;
 }

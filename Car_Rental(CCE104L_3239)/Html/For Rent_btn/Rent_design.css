@@ -1,109 +1,101 @@
-.main{
-    height: 100%;
+*{
+    box-sizing: border-box;
     width: 100%;
-  }
-  .navbar{
-    width: 100%;
-    height: 105px;
-    /*margin: 10%,10%,10%,50%;*/
-    display: flex;
-    /*padding-left: 40px;*/
-    background: rgb(38, 6, 152);
-    /*padding-bottom: 25px;*/
-    border-radius: 100px;
-    
-  }
-  
-  h2, #title{
-    font-size: 50px;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .icon{
-  
-    /*color: rgb(255, 255, 255);*/
-    font-size: 30px;
-    font-family: Arial;
-    padding: 20px;  
-    float: left;
-    padding-top: 40px; 
-    
-  }
-  ul{
-    float: left;
-    display: grid;
-    margin-top: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-     
-  }
-  ul li{
-    list-style: none;
-    margin-left: 2rem;
-    /*margin-top: 20px;*/
-    font-size: 26px;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-    /*padding-right: 37px;*/
-    
-  }
-  
-  ul li a{
+    margin: 0;
     text-decoration: none;
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-  }
-  
-  ul li a:hover{
-    color: rgb(0, 0, 0);
-  }
-
-    /*/////////////SERVICES//////////////*/
-.container{
-  padding: 40px 0px 0px 40% ;
-
+    list-style-type: none;
+    
 }
-  .services {
-    /*display: flex;*/
-    margin: 20px 20% 0% 40% ; /* T R B L */
-    width: 100%;
-    padding: 60px;
-    border: 1px solid #702424;
-    border-radius: 10px;
-    flex-direction: column;
+:root{
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 58%;
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    display: inline-block;
     position: relative;
-    box-shadow: 10px 5px rgb(1, 1, 250);
 }
 
-.services input {
-    margin: 20px 0px 0px -10px;
-    width: 100%;
-    height: 20px;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.submit {
-    margin-left: 8rem;
-    margin-top: 20px;
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
     padding: 20px 20px;
-    border-radius: 10px;
-    background-color: #04f952;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.submit:hover{
-  background-color: #0a5b24;
+    margin-top: 10rem;
+    text-align: center;
 }
 
-  
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 65px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 20px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.column-content{
+    background-color: rgb(178, 126, 227);
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-around;
+    color: black;   
+}
+
+#column-content1,#column-content2,#column-content3{
+    width: 20px;
+}
