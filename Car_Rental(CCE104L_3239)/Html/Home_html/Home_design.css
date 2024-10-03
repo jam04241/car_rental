@@ -96,7 +96,7 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     align-self: center;
 }
 .Container{
-    color:#ffff;
+    color:#ffff; /* Font Color */
     border-radius: 100px;
     background-color: rgba(1, 27, 33, 1);
     display: flex;
