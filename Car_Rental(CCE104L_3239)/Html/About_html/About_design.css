@@ -87,15 +87,47 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     background-color: rgb(255, 0, 0);
 }
 
-.column-content{
-    background-color: rgb(178, 126, 227);
+.column-content {
     display: flex;
-    flex-direction: row;
-    text-align: justify;
     justify-content: space-around;
-    color: black;   
+    padding: 80px;
+    margin-top: 3%;
+    border-radius: 5px;
+    background-color: rgba(1, 27, 33, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
 }
 
-#column-content1,#column-content2,#column-content3{
-    width: 20px;
+.column-content1,.column-content2,.column-content3{
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    width: 30%;
+    font-family: 'Alkalami';font-size: 24px;
+    color: rgba(1, 27, 33, 1);
+    text-align: justify;
+}
+
+.about-content {
+    text-align: center;
+    margin-top: 3%;
+    color: rgba(1, 27, 33, 1);
+    padding: 50px;
+    border-radius: 5px;
+    background-color:  rgba(1, 27, 33, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: 'Alkalami';font-size: 24px;
+    color:rgb(255, 255, 255)
+    
 }

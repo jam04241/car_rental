@@ -52,7 +52,7 @@ body{
     z-index: 1;  /* Keeps the container above the video */
 }
 
-input, #gender, button, option {
+input, #sex, button, option {
     color: white;
     background-color: rgba(70, 114, 123, 0.8);
     padding-right: 50px;
@@ -63,13 +63,13 @@ input, #gender, button, option {
     border-radius: 1rem;
     padding-left: 1rem;
 }
-input::placeholder,#Gender_Select::placeholder{
+input::placeholder,#sex_select::placeholder{
     color: #ffff;
 }
 input{
     text-align: left;
 }
-#Gender_Select{
+#sex_select{
     color: #ffff;
     background-color: rgba(70, 114, 123, 0.8);
     margin-top: 20px;

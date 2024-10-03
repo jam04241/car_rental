@@ -85,3 +85,65 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 #dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
     background-color: rgb(255, 0, 0);
 }
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    height: 55vh;
+    background-color: rgba(70, 114, 123, 0.8);
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 0.5px;
+    color: rgb(195, 200, 200);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    
+}
+form input{
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    width: 200px;
+    border-radius: 30px;
+
+}
+
+.fa-brands {
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+    top: 130px;
+    color: black;
+  }
+  
+  .fa-solid{
+      font-size: 40px;
+      padding: 10px;
+      margin: 15px;
+      position:relative;
+      left:40px;
+      top: 130px;
+      color: rgb(0, 0, 0);
+  }
+.sub {
+    width: 20%;
+    height: 60px;
+    margin: 20px 0;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+    bottom: 25px;
+}
+

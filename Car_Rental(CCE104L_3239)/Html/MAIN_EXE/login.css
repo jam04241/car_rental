@@ -74,8 +74,11 @@ h1,#remember,#forget,#login,#dont,a{
     z-index: 1; /* Ensure this is above the overlay */
     box-shadow: 10px 8px;
 }
-section{ 
+section{
     padding: 20px 40px 0px 40px;
+
+}
+form{
     display: flex;
     flex-direction: column;
 }
@@ -85,10 +88,13 @@ h1, input, label,#dont, a{
     height: 1rem; 
     border-radius: 1rem;
 }
+#forget{
+    margin-left: 4.5vh;
+}
 input{
     color: #ffff;
     margin-top: 10px;
-    background-color: rgba(70, 114, 123, 0.8);
+    background-color: rgba(8, 71, 83, 0.8);
 }
 input::placeholder{
     color: #ffff;
@@ -113,6 +119,7 @@ input::placeholder{
     cursor: pointer;
     align-self: center;
 }
+
 #btn{
     background-color: rgba(70, 114, 123, 0.8);
     height: 40px;
