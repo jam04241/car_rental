@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/*if (!isset($_SESSION['username'])) {
+    header("Location:../MAIN_EXE/login.php");
+    exit();
+}*/
+?>
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +14,6 @@
     <title>RUBEN</title>
 </head>
 <body>
-    <?PHP
-    session_start();
-     ?>
     <div class="main">
         <div class="topnav">
             <ul class="navbar">
@@ -18,18 +21,18 @@
                     <img id="car-logo" src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/Car Logo/Ruben Car Rental(3).png" >
                 </div>
                 <li></li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Home_html/Home.html">HOME</a></li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/About_html/About.html">ABOUT</a></li>
+                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Home_html/Home.php">HOME</a></li>
+                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/About_html/About.php">ABOUT</a></li>
                 <li>  
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="support.html">CUSTOMER SERVICE</a></li>
-                            <li><a id="dropdown2" href="vehicle.html">VEHICLE CATEGORY</a></li>
+                            <li><a id="dropdown1" href="support.php">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown2" href="vehicle.php">VEHICLE CATEGORY</a></li>
                         </ul>
 
                 </li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Contact_html/Contact.html">CONTACT</a>
+                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Contact_html/Contact.php">CONTACT</a>
                 </li>
                 <li>
                     <a href="#" id="profile">
@@ -37,7 +40,7 @@
                     </a>
                         <ul class="drop_profile">
                             <li><a id="dropdown3" href="#" >Jam04241</a></li>
-                            <li><a id="dropdown4" href="/CACA/Car_Rental(CCE104L_3239)/Html/MAIN_EXE/login.php">Log Out</a></li>
+                            <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
                         </ul>
                 </li>
             </ul> 
@@ -55,10 +58,10 @@
                 <div class="picture">
                 <img src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/Vehicle.png" alt="vehicle" type="png" width="100" height="400">
                 </div>
-                <button id="rent-btn"><a href="/CACA/Car_Rental(CCE104L_3239)/Html/For Rent_btn/Rent.html">Rent</a></button>
+                <button id="rent-btn"><a href="/CACA/Car_Rental(CCE104L_3239)/Html/For Rent_btn/Rent.php">Rent</a></button>
         </div>
     </div>
     </div>
     <script src="Home_script.js"></script>
 </body>
-</html>
+</php>

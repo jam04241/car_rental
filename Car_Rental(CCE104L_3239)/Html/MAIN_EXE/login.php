@@ -11,23 +11,22 @@
     
 </head>
 <body>
-
     <div class="main">
         <div class="bgvideo">
             <video autoplay muted loop playsinline id="video">
                 <source src="../bg_video/video_bg(1).webm">
             </video>
         </div>
-        <div class="bg-overlay"></div>
+        <div class="bg-overlay"></div>  
 
         <div class="log-box">
             <div class="logo-wrapper">
                 <img id="car_logo" src="../Photos/Car Logo/Ruben_Car_Rental(7).png">
             </div>
             <section>
-                <form action="db_login.php" method="POST">
+                <form action="../DATABASE/login_query.php" method="POST">
                     <input type="email" id="email" name="email" placeholder="Enter Email" autocomplete="off" required>
-                    <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required>  
+                    <input type="password" id="pass" name="pass" placeholder="Enter Password" autocomplete="off" required>  
                      
             <div class="checkbox">  
                 <p id="remember"><input type="checkbox" id="checkbox"> <label type="text" id="check_btn">Remember me</label>
@@ -41,7 +40,7 @@
                 <a href="#" id="forget">Forgot Password?</a>
                 <p id="dont">
                     Don't have an account?
-                    <a href="../MAIN_EXE/signUp.html">Sign in</a>
+                    <a href="signUp.php">Sign in</a>
                 </p>
             </section> 
         </div>
