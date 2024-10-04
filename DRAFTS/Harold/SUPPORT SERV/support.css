@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffff;
+}
+:root {
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 200px; /* set a fixed width */
+    height: 200px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 65px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 20px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.icon-img1{
+    width: 18%;
+    font-size: 190px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 120px;
+    border-radius:10px ;
+}
+
+.icon-img2{
+    width: 14%;
+    font-size: 200px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 120px;
+    border-radius:10px ;
+}
+
+.icon-img3{
+    width: 14%;
+    font-size: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20%;
+    margin-left: 70%;
+    margin-top: 120px;
+    border-radius:10px ;
+}
+
+p{
+    color: black;
+}
+
+.icon-img1 i{
+    color: black;
+}
+
+.icon-img2 i{
+    color: black;
+}
+
+.icon-img3 i{
+    color: black;
+}
+
+.p1{
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+
+}
+.p2{
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+}
+.p3{
+    font-size: 20px; 
+    text-align: justify;
+    position: relative;
+}

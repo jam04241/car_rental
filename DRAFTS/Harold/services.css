@@ -1,0 +1,74 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+.container {
+    position: relative;
+}
+
+.box-img{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    position: relative;
+    bottom: 30rem;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(133, 141, 156, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+}
+    
+.box-img img{
+    border-radius: 35px;
+}
+
+.box-img .par{
+    position: relative;
+    text-align:justify;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;   
+}
+.box-img .btn{
+    padding: 10px;
+    position: relative;
+    top: 180px;
+}
+h1{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 40vh;
+}
+
+.bottom{
+    width: 100%;
+    height: 40vh;
+    background-color: aqua;
+}
+
+.icon-img i{
+    width: 100%;   
+    height: 40px; 
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.icon-img{
+    padding: 10px;
+}
