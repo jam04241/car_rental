@@ -4,7 +4,7 @@
 $host = "localhost"; // Use direct values or fetch them securely
 $username = "root"; // Change as needed
 $pass = ""; // Change as needed
-$dbname = "db_carrental";
+$dbname = "ruben_carrental";
 
 // Create a new connection
 $con = new mysqli($host, $username, $pass, $dbname);
@@ -15,19 +15,19 @@ if ($con->connect_error) {
 }
 
 // Create database if it does not exist
-$con->query("CREATE DATABASE IF NOT EXISTS $dbname");
-$con->select_db($dbname);
+try {
+    $con = new mysqli($host, $username, $pass);
+    $con->query("CREATE DATABASE IF NOT EXISTS $dbname");
+    $con->select_db($dbname);
+} catch (mysqli_sql_exception $e) {
+    die("<script>alert('Error creating database: " . $e->getMessage() . "');</script>");
+}
 
-// Create the user login table if it does not exist
-$con->query("CREATE TABLE IF NOT EXISTS tbl_userlogin (
-    USER_ID INT NOT NULL AUTO_INCREMENT,
-    Fname VARCHAR(50) NOT NULL,
-    Lname VARCHAR(50) NOT NULL,
-    Gender VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    PRIMARY KEY (USER_ID)
-)");
+// Now, try to connect to the database
+$con = new mysqli($host, $username, $pass, $dbname);
+if ($con->connect_error) {
+    die("<script>alert('Connection failed: " . $con->connect_error . "');</script>");
+}
 
 // Handle the login functionality
 if (isset($_POST['login'])) {
@@ -42,11 +42,28 @@ if (isset($_POST['login'])) {
 
     if ($result->num_rows > 0) {
         echo "<script>alert('Login successful. Welcome to RUBEN Car E-Rental!');</script>";
+        echo "<script>window.location.href='../Home_html/Home.php';</script>";
     } else {
         echo "<script>alert('Invalid email or password.');</script>";
+        echo "<script>window.location.href='login.php';</script>";
     }
 
     $stmt->close();
 }
 $con->close();
+// Create the user login table if it does not exist
+/*$con->query("CREATE IF NOT EXISTS TABLE tbl_userlogin (
+    user_id INT NOT NULL AUTO_INCREMENT,
+    Fname VARCHAR(50) NOT NULL,
+    Lname VARCHAR(50) NOT NULL,
+    Gender ENUM('Male', 'Female') NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (user_id)
+)");
+$con->commit();*/
+
+
 ?>
+
+
