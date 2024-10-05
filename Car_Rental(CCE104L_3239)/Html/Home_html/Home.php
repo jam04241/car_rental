@@ -1,8 +1,9 @@
 <?php
-/*if (!isset($_SESSION['username'])) {
+session_start();
+if (!isset($_SESSION['email'])) {
     header("Location:../MAIN_EXE/login.php");
     exit();
-}*/
+}
 ?>
 <!DOCTYPE php>
 <php lang="en">
@@ -16,13 +17,13 @@
 <body>
     <div class="main">
         <div class="topnav">
-            <ul class="navbar">
+            <ul class="navbar"> 
                 <div class="Car_icon">
-                    <img id="car-logo" src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/Car Logo/Ruben Car Rental(3).png" >
+                    <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png" >
                 </div>
                 <li></li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Home_html/Home.php">HOME</a></li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/About_html/About.php">ABOUT</a></li>
+                <li><a href="../Home_html/Home.php">HOME</a></li>
+                <li><a href="../About_html/About.php">ABOUT</a></li>
                 <li>  
                     <a href="#" id="Service">SERVICES</a>
 
@@ -32,11 +33,11 @@
                         </ul>
 
                 </li>
-                <li><a href="/CACA/Car_Rental(CCE104L_3239)/Html/Contact_html/Contact.php">CONTACT</a>
+                <li><a href="../Contact_html/Contact.php">CONTACT</a>
                 </li>
                 <li>
                     <a href="#" id="profile">
-                            <img id="profile_icon" src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/png_account.svg">
+                            <img id="profile_icon" src="../Photos/png_account.svg">
                     </a>
                         <ul class="drop_profile">
                             <li><a id="dropdown3" href="#" >Jam04241</a></li>
@@ -56,9 +57,9 @@
                     perfect car to suit your needs and budget. 
                 </p>
                 <div class="picture">
-                <img src="/CACA/Car_Rental(CCE104L_3239)/Html/Photos/Vehicle.png" alt="vehicle" type="png" width="100" height="400">
+                <img src="../Photos/Vehicle.png" alt="vehicle" type="png" width="100" height="400">
                 </div>
-                <button id="rent-btn"><a href="/CACA/Car_Rental(CCE104L_3239)/Html/For Rent_btn/Rent.php">Rent</a></button>
+                <button id="rent-btn"><a href="../For Rent_btn/Rent.php">Rent</a></button>
         </div>
     </div>
     </div>

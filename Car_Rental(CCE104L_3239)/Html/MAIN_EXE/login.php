@@ -33,7 +33,7 @@
                 </p>
             </div>
                 <p id="login-container">
-                    <button id="btn" type="submit" name="login" id="login"><a href="../Home_html/Home.html">Login</a></button>    
+                    <button id="btn" type="submit" name="login" id="login" style="color: #ffffff">Login</button>    
                 </p>
                 </form>
                 
