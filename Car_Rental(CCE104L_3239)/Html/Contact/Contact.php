@@ -1,13 +1,5 @@
-<?php
-session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location:../MAIN_EXE/login.php");
-    exit();
-}
-?>
-
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +13,11 @@ if (!isset($_SESSION['email'])) {
         <div class="topnav">
             <ul class="navbar">
                 <div class="Car_icon">
-                    <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png" >
+                    <img id="car-logo" src="/Car_Rental(CCE104L_3239)/Html/Photos/Car Logo/Ruben Car Rental(3).png" >
                 </div>
                 <li></li>
-                <li><a href="../Home/Home.php">HOME</a></li>
-                <li><a href="../About/About.php">ABOUT</a></li>
+                <li><a href="/Car_Rental(CCE104L_3239)/Html/Home_html/Home.html">HOME</a></li>
+                <li><a href="/Car_Rental(CCE104L_3239)/Html/About_html/About.html">ABOUT</a></li>
                 <li>  
                     <a href="#" id="Service">SERVICES</a>
 
@@ -35,34 +27,34 @@ if (!isset($_SESSION['email'])) {
                         </ul>
 
                 </li>
-                <li><a href="../Contact/Contact.php">CONTACT</a>
+                <li><a href="/Car_Rental(CCE104L_3239)/Html/Contact_html/Contact.html">CONTACT</a>
                 </li>
                 <li>
                     <a href="#" id="profile">
-                            <img id="profile_icon" src="../Photos/png_account.svg">
+                            <img id="profile_icon" src="/Car_Rental(CCE104L_3239)/Html/Photos/png_account.svg">
                     </a>
                         <ul class="drop_profile">
-                         <li><a id="dropdown3" href="#" >Jam04241</a></li>
-                         <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
+                            <li><a id="dropdown3" href="#" >Jam04241</a></li>
+                            <li><a id="dropdown4" href="/Car_Rental(CCE104L_3239)/Html/MAIN_EXE/login.html">Log Out</a></li>
                         </ul>
-                    </li>
-                 </ul>
-            </div>
-            <div class="content">
-                <form>
-                    <h2>We are available 24/7</h2>
-                    <p>Explore our Help Docs or Contact Us</p>
-                    <input type="text" id="name" name="name" placeholder="NAME:"><br>
-                    <input type="email" id="email" name="email" placeholder="Email:" autocomplete="off" required><br>
-                    <input type="text" id="message" name="message" placeholder="MESSAGE:"><br>
-                    <button class="sub">Submit</button>
-                </form>
-            <a href="https://www.facebook.com/haroldjohn.naquila.7"><i class="fa-brands fa-facebook"></i></a>
-           <a href="https://www.google.com/maps/place/SM+City+Davao/@7.0492573,125.541435,14z/data=!4m6!3m5!1s0x32f973863a317321:0x5a0db64db28226cd!8m2!3d7.0496769!4d125.5883056!16s%2Fm%2F047rm3n?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i></a>
-            <a href="https://mail.google.com/mail/u/0/?hl=en-GB#sent"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.tiktok.com/explore"><i class="fa-solid fa-phone"></i></a>       
-            </div>
+                    
+                </li>
+            </ul>
         </div>
+                
+            <div class="form">
+                <h1>We are available 24/7</h1>
+                <p>Explore our help Docs or Contact Us</p>
+                <input type="text" id="email" name="name"placeholder="Enter Email" autocomplete="off" required>
+                <input type="text" id="message" name="message"placeholder="Messages">
+                <button class="submit">Click to Submit</button>
+                    <div class="icon-container">
+                        <a href="https://web.facebook.com/Ramssukasaha"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?hl=en-GB#sent"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+            </div>
+    </div>
     <script src="Contact_script.js"></script>
-    </body>
-</php>
+</body>
+</html>

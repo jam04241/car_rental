@@ -4,7 +4,7 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #ffff;
+    color: #ffffff;
 }
 :root {
     font-size: 18px;
@@ -17,12 +17,14 @@ ul{
 
 a{
     font-size: 25px;
+    color: #ffffff;
 }
 
 .topnav, .navbar{ 
     background-color: rgba(1, 27, 33, 1);
     display: flex;
     align-items: center;
+    
 }
 #car-logo{
     width: 13rem; /* set a fixed width */
@@ -87,63 +89,94 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 }
 
 
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 45%;
-    height: 55vh;
-    background-color: rgba(70, 114, 123, 0.8);
-    margin: 70px auto;
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 10px 10px 10px 0.5px;
-    color: rgb(195, 200, 200);
-}
+/*form designing*/
 
-form{
+.form{
+    width: 35%;
+    height: 70vh;
+    padding: 10px;
+    background-color: rgb(5, 47, 56);
+    border-radius: 50px 50px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    position: absolute;
-    width: 50%;
+    position: relative; 
+    left: 30%;
+    top: 60px;
     
 }
-form input{
-    padding: 20px;
-    border: 3px solid rgb(0, 0, 0);
+.form h1 {
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    align-items: center;
     position: relative;
-    width: 200px;
-    border-radius: 30px;
+    margin-left: 45%;
+    top: 90px;
+    color: #ffffff;
 
 }
 
-.fa-brands {
-    font-size: 40px;
+p{
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    align-items: center;
+    position: relative;
+    margin-left: 55%;
+    top: 90px;
+    color: #ffffff;
+}
+
+.form input{
     padding: 10px;
-    position: relative;
-    left: 20px;
-    top: 130px;
-    color: black;
-  }
-  
-  .fa-solid{
-      font-size: 40px;
-      padding: 10px;
-      margin: 15px;
-      position:relative;
-      left:40px;
-      top: 130px;
-      color: rgb(0, 0, 0);
-  }
-.sub {
-    width: 20%;
+    width: 50%;
     height: 60px;
-    margin: 20px 0;
-    border-radius: 30px;
-    border: 3px solid rgb(0, 0, 0);
-    font-size: 18px;
+    margin-top: 40px;
     position: relative;
-    left: 20px;
-    bottom: 25px;
+    top: 100px;
+    border-radius: 40px;
+    text-align: auto;
+    color:black;
+    
 }
 
+
+.submit{
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right:15%;
+    top: 110px;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    
+}
+
+.icon-container {
+    display: flex;           
+    justify-content: center;  
+    align-items: center;      
+    gap: -15%;             
+    margin-left: 25%;
+    margin-top: 135px;
+    
+    
+
+}
+
+.icon-container i {
+    font-size: 40px;
+}
+
+
+
+
+  

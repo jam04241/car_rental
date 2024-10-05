@@ -99,3 +99,34 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 #column-content1,#column-content2,#column-content3{
     width: 20px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 45%;
+    border-radius: 20px;
+    margin-top: 6%;
+    background-color: blue;
+    
+}
+
+.services input, button {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;  
+    align-items: center;   
+    padding: 10px;
+    margin: 5px;
+    margin-left: 30%;
+    border-radius: 20px;
+        
+}
+
+.pick{
+    position: relative;
+    top: 10px;
+    margin-left: 31%;
+    
+    
+}

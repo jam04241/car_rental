@@ -1,13 +1,5 @@
-<?php
-session_start();
- if (!isset($_SESSION['email'])) {
-    header("Location:../MAIN_EXE/login.php");
-    exit();
-}
-?>
-
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +8,6 @@ session_start();
     <title>RUBEN</title>
 </head>
 <body>
-
     <div class="main">
         <div class="topnav">
             <ul class="navbar">
@@ -43,7 +34,7 @@ session_start();
                     </a>
                         <ul class="drop_profile">
                             <li><a id="dropdown3" href="#" >Jam04241</a></li>
-                            <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
+                            <li><a id="dropdown4" href="../MAIN_EXE/login.php">Log Out</a></li>
                         </ul>
                     
                     </li>
@@ -52,22 +43,27 @@ session_start();
         </div>
         <div class="container">  
             <div class="services">
-                <form>
-                    <input type="text" id="license" name="license" placeholder="LICENSE:"><br>
-                    
-                    <input type="text" id="type" name="type" placeholder="TYPE:"><br>
-                    
-                    <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
-                    
-                    <input type="number" id="payment" name="payment" placeholder="PAYMENT:"><br>
-                    <label id="date1">Pick up Date:</label>
-                    <input type="date" id="date" name="date" placeholder="Pick up date"><br>
-                    
-                    <button class="submit">NEXT</button>
-                </form>
+                    <form>
+                        <input type="text" id="valid" name="valid" placeholder="VALID ID:"><br>
+
+                        <input type="text" id="license" name="license" placeholder="LICENSE:"><br>
+                        
+                        <input type="text" id="type" name="type" placeholder="TYPE:"><br>
+                        
+                        <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
+                        
+                        <input type="number" id="payment" name="payment" placeholder="PAYMENT:"><br>
+                        <p class="pick">Pick up date:</p><br>
+                        <input type="date" id="pickdate" name="pickdate" placeholder="Pick up date"><br>
+
+                        <p class="pick">Return date:</p><br>
+                        <input type="date" id="returndate" name="returndate" placeholder="Return date"><br>
+                        
+                        <button class="submit">NEXT</button>
+                    </form>
+                </div>
             </div>
-    </div>
-    </div>
+        </div>
     <script src="Rent_script.js"></script>
 </body>
-</php>
+</html>
