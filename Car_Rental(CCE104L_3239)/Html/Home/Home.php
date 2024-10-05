@@ -22,8 +22,8 @@ if (!isset($_SESSION['email'])) {
                     <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png" >
                 </div>
                 <li></li>
-                <li><a href="../Home_html/Home.php">HOME</a></li>
-                <li><a href="../About_html/About.php">ABOUT</a></li>
+                <li><a href="../Home/Home.php">HOME</a></li>
+                <li><a href="../About/About.php">ABOUT</a></li>
                 <li>  
                     <a href="#" id="Service">SERVICES</a>
 
@@ -59,7 +59,7 @@ if (!isset($_SESSION['email'])) {
                 <div class="picture">
                 <img src="../Photos/Vehicle.png" alt="vehicle" type="png" width="100" height="400">
                 </div>
-                <button id="rent-btn"><a href="../For Rent_btn/Rent.php">Rent</a></button>
+                <button id="rent-btn"><a href="../Services/Rent.php">Rent</a></button>
         </div>
     </div>
     </div>

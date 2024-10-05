@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffff;
+}
+:root {
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 65px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 20px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    height: 55vh;
+    background-color: rgba(70, 114, 123, 0.8);
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 0.5px;
+    color: rgb(195, 200, 200);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    
+}
+form input{
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    width: 200px;
+    border-radius: 30px;
+
+}
+
+.fa-brands {
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+    top: 130px;
+    color: black;
+  }
+  
+  .fa-solid{
+      font-size: 40px;
+      padding: 10px;
+      margin: 15px;
+      position:relative;
+      left:40px;
+      top: 130px;
+      color: rgb(0, 0, 0);
+  }
+.sub {
+    width: 20%;
+    height: 60px;
+    margin: 20px 0;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+    bottom: 25px;
+}
+
