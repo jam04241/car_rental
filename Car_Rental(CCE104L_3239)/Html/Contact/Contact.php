@@ -13,11 +13,11 @@
         <div class="topnav">
             <ul class="navbar">
                 <div class="Car_icon">
-                    <img id="car-logo" src="/Car_Rental(CCE104L_3239)/Html/Photos/Car Logo/Ruben Car Rental(3).png" >
+                    <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png" >
                 </div>
                 <li></li>
-                <li><a href="/Car_Rental(CCE104L_3239)/Html/Home_html/Home.html">HOME</a></li>
-                <li><a href="/Car_Rental(CCE104L_3239)/Html/About_html/About.html">ABOUT</a></li>
+                <li><a href="../Home/Home.php">HOME</a></li>
+                <li><a href="../About/About.php">ABOUT</a></li>
                 <li>  
                     <a href="#" id="Service">SERVICES</a>
 
@@ -27,15 +27,15 @@
                         </ul>
 
                 </li>
-                <li><a href="/Car_Rental(CCE104L_3239)/Html/Contact_html/Contact.html">CONTACT</a>
+                <li><a href="../Contact/Contact.php">CONTACT</a>
                 </li>
                 <li>
                     <a href="#" id="profile">
-                            <img id="profile_icon" src="/Car_Rental(CCE104L_3239)/Html/Photos/png_account.svg">
+                            <img id="profile_icon" src="../Photos/png_account.svg">
                     </a>
                         <ul class="drop_profile">
                             <li><a id="dropdown3" href="#" >Jam04241</a></li>
-                            <li><a id="dropdown4" href="/Car_Rental(CCE104L_3239)/Html/MAIN_EXE/login.html">Log Out</a></li>
+                            <li><a id="dropdown4" href="../MAIN_EXE/login.php">Log Out</a></li>
                         </ul>
                     
                 </li>

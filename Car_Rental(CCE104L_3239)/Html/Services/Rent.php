@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,29 +41,73 @@
                 </ul>
             </div>
         </div>
-        <div class="container">  
-            <div class="services">
+        <div class="main2">
+            <div class="container">  
+                <div class="cl_rent">
+                        <form>
+                            <p class="cl-id">Client Rental Information:</p>
+                            <input type="text" id="valid" name="valid" placeholder="VALID ID:"><br>
+
+                            <input type="text" id="license" name="license" placeholder="LICENSE:"><br>
+                            
+                            <input type="text" id="type" name="type" placeholder="TYPE:"><br>
+                            
+                            <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
+                            
+                            <p class="pick">Pick up date:</p>
+                            <input type="date" id="date" name="date" placeholder="Pick up date"><br>
+                            
+                            <button class="submit">NEXT</button>
+                        </form>
+                </div>
+            </div>
+
+            <div class="sp_container">
+                <div class="supporting_id">
+                        <form>
+                            <p class="sp-id">Supporting Identification:</p>
+
+                            <input type="text" id="full name" name="full name" placeholder="FULL NAME:"><br>
+                            
+                            <input type="text" id="valid" name="valid" placeholder="VALID ID 1:"><br>
+
+                            <input type="text" id="valid" name="valid" placeholder="VALID ID 2:"><br>
+
+                            <input type="text" id="affiliation" name="affiliation" placeholder="AFFILIATION:"><br>
+                            
+                            <input type="text" id="address" name="address" placeholder="ADDRESS:"><br>
+                            
+                            <input type="number" id="contact number" name="contact number" placeholder="CONTACT NUMBER:"><br>
+                            
+                            <button class="submit">NEXT</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="main3">
+            <div class="payment_container">
+                <div class="payment">
                     <form>
-                        <input type="text" id="valid" name="valid" placeholder="VALID ID:"><br>
+                        <p class="payment-method">Payment:</p>             
+                        <input type="number" id="downpayment" name="downpayment" placeholder="DOWNPAYMENT:"><br>
 
-                        <input type="text" id="license" name="license" placeholder="LICENSE:"><br>
-                        
-                        <input type="text" id="type" name="type" placeholder="TYPE:"><br>
-                        
-                        <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
-                        
-                        <input type="number" id="payment" name="payment" placeholder="PAYMENT:"><br>
-                        <p class="pick">Pick up date:</p><br>
-                        <input type="date" id="pickdate" name="pickdate" placeholder="Pick up date"><br>
+                                <label for="payment-mode"></label></form>                     
+                                <select id="payment-mode" name="payment-mode">
+                                    <option value="" disabled selected>Select Payment Mode</option>
+                                    <option value="e-pay">E-pay</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="debit-card">Debit Card</option>
+                                </select><br>
 
-                        <p class="pick">Return date:</p><br>
-                        <input type="date" id="returndate" name="returndate" placeholder="Return date"><br>
-                        
                         <button class="submit">NEXT</button>
+                        
+
                     </form>
                 </div>
             </div>
         </div>
+    </div>
     <script src="Rent_script.js"></script>
 </body>
-</html>
+</php>
