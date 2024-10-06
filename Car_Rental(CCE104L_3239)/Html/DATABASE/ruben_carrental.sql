@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2024 at 03:57 AM
+-- Generation Time: Oct 06, 2024 at 05:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_client_cust_serv` (
   `client_id` int(11) NOT NULL,
-  `licence_valid_id` int(11) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
   `Contact_no` int(13) NOT NULL,
-  `message` text NOT NULL,
-  `Address` varchar(50) NOT NULL,
+  `msgs` text NOT NULL,
+  `addrss` varchar(50) NOT NULL,
   `ID_ACC` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -45,13 +45,9 @@ CREATE TABLE `tbl_client_cust_serv` (
 CREATE TABLE `tbl_client_payment` (
   `reference_no` int(11) NOT NULL,
   `ID_ACC` int(11) NOT NULL,
-  `client_id` int(11) NOT NULL,
-  `licence_no` int(11) NOT NULL,
+  `rent_no` int(11) NOT NULL,
   `Modeofpay` enum('e-pay','cash','debit_card') NOT NULL,
-  `total_pay` decimal(7,2) NOT NULL,
-  `dp` decimal(7,2) NOT NULL,
-  `Remaining_bal` decimal(7,2) NOT NULL,
-  `isfullpay` tinyint(1) NOT NULL
+  `dp` decimal(7,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -62,13 +58,21 @@ CREATE TABLE `tbl_client_payment` (
 
 CREATE TABLE `tbl_rent_car` (
   `rent_no` int(11) NOT NULL,
-  `licence_no` int(11) NOT NULL,
-  `id_acc` int(11) NOT NULL,
+  `ID_ACC` int(11) NOT NULL,
+  `valid_id` varchar(20) NOT NULL,
+  `licence_no` varchar(20) NOT NULL,
   `car_type` enum('Sedan','Pickup') NOT NULL,
-  `Vehicle` enum('''sample''','''sample''','','') NOT NULL,
+  `Vehicle` varchar(50) NOT NULL,
   `date_rental` date NOT NULL,
   `date_period` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_rent_car`
+--
+
+INSERT INTO `tbl_rent_car` (`rent_no`, `ID_ACC`, `valid_id`, `licence_no`, `car_type`, `Vehicle`, `date_rental`, `date_period`) VALUES
+(1, 4, 'qwe5673', 'qwe5678578', 'Pickup', 'racal', '2024-10-10', '2024-10-24');
 
 -- --------------------------------------------------------
 
@@ -79,12 +83,12 @@ CREATE TABLE `tbl_rent_car` (
 CREATE TABLE `tbl_support_details` (
   `sub_no` int(11) DEFAULT NULL,
   `ID_ACC` int(11) NOT NULL,
-  `client_id` int(11) NOT NULL,
+  `rent_no` int(11) NOT NULL,
   `ref_name` varchar(100) NOT NULL,
   `valid_id1` int(11) NOT NULL,
   `valid_id2` int(11) NOT NULL,
   `affliation` varchar(50) NOT NULL,
-  `address` varchar(50) NOT NULL,
+  `addrss` varchar(50) NOT NULL,
   `contact_no` int(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -95,7 +99,7 @@ CREATE TABLE `tbl_support_details` (
 --
 
 CREATE TABLE `tbl_userlogin` (
-  `user_id` int(11) NOT NULL,
+  `ID_ACC` int(11) NOT NULL,
   `Fname` varchar(50) NOT NULL,
   `Lname` varchar(50) NOT NULL,
   `Gender` enum('Male','Female') NOT NULL,
@@ -108,7 +112,7 @@ CREATE TABLE `tbl_userlogin` (
 -- Dumping data for table `tbl_userlogin`
 --
 
-INSERT INTO `tbl_userlogin` (`user_id`, `Fname`, `Lname`, `Gender`, `email`, `password`, `pass_verify`) VALUES
+INSERT INTO `tbl_userlogin` (`ID_ACC`, `Fname`, `Lname`, `Gender`, `email`, `password`, `pass_verify`) VALUES
 (5, 'Password', 'Hashed', 'Male', 'passwordhash@ramses.ph', '$2y$10$xpxIY1Q8DfpfrGGDIRaxa.7NYR3bUYwp1VGhxVr9X.8oSjeMxvQ1K', 'cce104'),
 (6, 'sample', 'sample', 'Male', 'sample@gmail.com', '$2y$10$Q//wMTv/9Kxu5cUx9ld6meYhCxXBpv91e8qGXUzsCf2/jYU2kxhc6', 'sample'),
 (7, 'em', 'mail', 'Female', 'email@gmail.com', '$2y$10$E4IIVErLcQcHQxMAp9e6rOl6Ii6OlOOcT5A9s6scRHQAgS.iymVVm', 'password');
@@ -139,7 +143,7 @@ ALTER TABLE `tbl_rent_car`
 -- Indexes for table `tbl_userlogin`
 --
 ALTER TABLE `tbl_userlogin`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`ID_ACC`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -161,13 +165,13 @@ ALTER TABLE `tbl_client_payment`
 -- AUTO_INCREMENT for table `tbl_rent_car`
 --
 ALTER TABLE `tbl_rent_car`
-  MODIFY `rent_no` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `rent_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_userlogin`
 --
 ALTER TABLE `tbl_userlogin`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID_ACC` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
