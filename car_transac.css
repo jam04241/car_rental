@@ -1,0 +1,191 @@
+h1{
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    height: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    margin-top: 100px;
+}
+
+
+.set1images{
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-left: 400px;
+
+}
+
+body{
+    background-color: #000000;
+}
+
+.button{
+    width: 50px;
+    height: 15px;
+}
+
+.user-fields {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    
+    
+}
+
+.field{
+    padding: 10px;
+    border-radius: 3px;
+    width: 250px;
+    
+}
+
+.paragraph{
+    background-color: #ffffff;
+    margin-left: 150px;
+    height:50%;
+    width: 60%;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: justify;
+    
+    
+}
+.section1{
+    background-image: url('C:../Capture0.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+}
+
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    font-size: 18px;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+}
+
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 90px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 0px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover{
+    background-color: rgb(255, 0, 0);
+}
+.main-Container{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+/*///////// TANGGALON NANI BOSS CIANO MAKAWATAS//////// */
+.prev{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    
+}
+
+.next   {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    top: 10px;
+    width: 40%;
+}
+
+
+
+
+
+
