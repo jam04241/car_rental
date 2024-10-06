@@ -1,10 +1,18 @@
+<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location:../MAIN_EXE/login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="Contact_design.css">
+    <link rel="stylesheet" href="Customer_s_design.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RUBEN</title>
 </head>
@@ -13,7 +21,7 @@
         <div class="topnav">
             <ul class="navbar">
                 <div class="Car_icon">
-                    <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png" >
+                    <img id="car-logo" src="../Photos/Car Logo/Ruben Car Rental(3).png">
                 </div>
                 <li></li>
                 <li><a href="../Home/Home.php">HOME</a></li>
@@ -22,7 +30,7 @@
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="#">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown1" href="../Services/CUSTOMER_SERVICE/Customer_s.php">CUSTOMER SERVICE</a></li>
                             <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
                         </ul>
 
@@ -55,6 +63,6 @@
                     </div>
             </div>
     </div>
-    <script src="Contact_script.js"></script>
+    <script src="Customer_s_script.js"></script>
 </body>
 </html>

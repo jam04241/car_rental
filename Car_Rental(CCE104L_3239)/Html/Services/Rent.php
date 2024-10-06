@@ -74,7 +74,7 @@ if (!isset($_SESSION['email'])) {
 
             <div class="sp_container">
                 <div class="supporting_id">
-                        <form>
+                        <form action="../DATABASE/ref_info_query.php" method="POST">
                             <p class="sp-id">Supporting Identification:</p>
 
                             <input type="text" id="full_name" name="full_name" placeholder="FULL NAME:"><br>
