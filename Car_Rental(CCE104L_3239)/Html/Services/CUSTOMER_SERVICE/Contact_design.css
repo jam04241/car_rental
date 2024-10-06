@@ -4,7 +4,7 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #ffff;
+    color: #ffffff;
 }
 :root {
     font-size: 18px;
@@ -17,12 +17,14 @@ ul{
 
 a{
     font-size: 25px;
+    color: #ffffff;
 }
 
 .topnav, .navbar{ 
     background-color: rgba(1, 27, 33, 1);
     display: flex;
     align-items: center;
+    
 }
 #car-logo{
     width: 13rem; /* set a fixed width */
@@ -86,68 +88,95 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     background-color: rgb(255, 0, 0);
 }
 
-.icon-img1{
-    width: 18%;
-    font-size: 190px;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 120px;
-    border-radius:10px ;
-}
 
-.icon-img2{
-    width: 14%;
-    font-size: 200px;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    margin-left: 40%;
-    margin-top: 120px;
-    border-radius:10px ;
-}
+/*form designing*/
 
-.icon-img3{
-    width: 14%;
-    font-size: 200px;
+.form{
+    width: 35%;
+    height: 70vh;
     padding: 10px;
-    text-align: center;
-    border-radius: 20%;
-    margin-left: 70%;
-    margin-top: 120px;
-    border-radius:10px ;
+    background-color: rgb(5, 47, 56);
+    border-radius: 50px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    left: 30%;
+    top: 60px;
+    
+}
+.form h1 {
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    align-items: center;
+    position: relative;
+    margin-left: 45%;
+    top: 90px;
+    color: #ffffff;
+
 }
 
 p{
-    color: black;
-}
-
-.icon-img1 i{
-    color: black;
-}
-
-.icon-img2 i{
-    color: black;
-}
-
-.icon-img3 i{
-    color: black;
-}
-
-.p1{
-    font-size: 20px;
-    text-align: justify;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    align-items: center;
     position: relative;
+    margin-left: 55%;
+    top: 90px;
+    color: #ffffff;
+}
+
+.form input{
+    padding: 10px;
+    width: 50%;
+    height: 60px;
+    margin-top: 40px;
+    position: relative;
+    top: 100px;
+    border-radius: 40px;
+    text-align: auto;
+    color:black;
+    
+}
+
+
+.submit{
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right:15%;
+    top: 110px;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    
+}
+
+.icon-container {
+    display: flex;           
+    justify-content: center;  
+    align-items: center;      
+    gap: -15%;             
+    margin-left: 25%;
+    margin-top: 135px;
+    
+    
 
 }
-.p2{
-    font-size: 20px;
-    text-align: justify;
-    position: relative;
+
+.icon-container i {
+    font-size: 40px;
 }
-.p3{
-    font-size: 20px; 
-    text-align: justify;
-    position: relative;
-}
+
+
+
+
+  

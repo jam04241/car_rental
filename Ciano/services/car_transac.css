@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    height: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+
+.set1images{
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+
+}
+
+body{
+    background-color: #000000;
+}
+
+.button{
+    width: 50px;
+    height: 15px;
+}
+
+.user-fields {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.field{
+
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+
+
+
+
+

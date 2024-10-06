@@ -1,6 +1,6 @@
 <?php
-session_start();
 
+session_start();
 $email = $_POST["email"];
 $pass = $_POST["pass"];
 

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location:../MAIN_EXE/login.php");
+    exit();
+}
+?>
 <!DOCTYPE php>
 <php lang="en">
 <head>
@@ -34,7 +41,7 @@
                     </a>
                         <ul class="drop_profile">
                             <li><a id="dropdown3" href="#" >Jam04241</a></li>
-                            <li><a id="dropdown4" href="../MAIN_EXE/login.php">Log Out</a></li>
+                            <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
                         </ul>
                     
                     </li>
@@ -55,7 +62,10 @@
                             <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
                             
                             <p class="pick">Pick up date:</p>
-                            <input type="date" id="date" name="date" placeholder="Pick up date"><br>
+                            <input type="date" id="pick_date" name="pick_date" placeholder="Pick up date"><br>
+
+                            <p class="pick">Return date:</p>
+                            <input type="date" id="return_date" name="return_date" placeholder="Return date"><br>
                             
                             <button class="submit">NEXT</button>
                         </form>
@@ -67,7 +77,7 @@
                         <form>
                             <p class="sp-id">Supporting Identification:</p>
 
-                            <input type="text" id="full name" name="full name" placeholder="FULL NAME:"><br>
+                            <input type="text" id="full_name" name="full_name" placeholder="FULL NAME:"><br>
                             
                             <input type="text" id="valid" name="valid" placeholder="VALID ID 1:"><br>
 
@@ -100,7 +110,7 @@
                                     <option value="debit-card">Debit Card</option>
                                 </select><br>
 
-                        <button class="submit">NEXT</button>
+                        <button class="submit" name="submit">Submit</button>
                         
 
                     </form>
