@@ -28,8 +28,8 @@ if (!isset($_SESSION['email'])) {
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="#">CUSTOMER SERVICE</a></li>
-                            <li><a id="dropdown2" href="../For Rent_btn/Rent.php">VEHICLE CATEGORY</a></li>
+                            <li><a id="dropdown1" href="../Services/Cust_Serv.php">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
                         </ul>
 
                 </li>
@@ -76,7 +76,7 @@ if (!isset($_SESSION['email'])) {
         <div class="main3">
             <div class="payment_container">
                 <div class="payment">
-                    <form  action="../DATABASE/client_payment_query.php" method="POST">
+                    <form  action="../DATABASE/client_transact.php" method="POST">
                         <p class="payment-method">Payment:</p>             
                         <input type="number" id="downp" name="downp" placeholder="DOWNPAYMENT:" autocomplete="off" required><br>
 

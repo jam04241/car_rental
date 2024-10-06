@@ -12,14 +12,15 @@ try{
     require"connect_db.php";
 
     $email = $_SESSION['email'];
-    $fk_query1 = "SELECT ID_ACC FROM tbl_userlogin WHERE email = {$email}";
+    $fk_query1 = "SELECT ID_ACC FROM tbl_userlogin WHERE email = ?";
     $stmt1 = $pdo->prepare($fk_query1);
-    $fk_ID_ACC = $stmt1->execute([$stmt1]);
+    $stmt1->execute([$email]);
+    $fk_ID_ACC = $stmt1->fetchColumn();
 
     // insert data in tbl_rent_car
-    $query="INSERT INTO tbl_rent_car(valid_id,licence_no,car_type,Vehicle,date_rental,date_period)values(?,?,?,?,?,?)";
+    $query="INSERT INTO tbl_rent_car(ID_ACC,valid_id,licence_no,car_type,Vehicle,date_rental,date_period)values(?,?,?,?,?,?,?)";
     $stmt= $pdo->prepare($query);
-    $stmt->execute([$valid,$licence,$vehicle,$pick_date,$return_date]);
+    $stmt->execute([$fk_ID_ACC,$valid,$licence,$vehicle,$pick_date,$return_date]);
 
 }
     catch(PDOException $e){

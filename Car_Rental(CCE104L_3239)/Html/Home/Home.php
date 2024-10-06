@@ -28,7 +28,7 @@ if (!isset($_SESSION['email'])) {
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="#">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown1" href="../Services/Cust_Serv.php">CUSTOMER SERVICE</a></li>
                             <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
                         </ul>
 
@@ -59,7 +59,7 @@ if (!isset($_SESSION['email'])) {
                 <div class="picture">
                 <img src="../Photos/Vehicle.png" alt="vehicle" type="png" width="100" height="400">
                 </div>
-                <button id="rent-btn"><a href="../Services/Rent.php">Rent</a></button>
+                <button id="rent-btn"><a href="../Services/client_rent.php">Rent</a></button>
         </div>
     </div>
     </div>

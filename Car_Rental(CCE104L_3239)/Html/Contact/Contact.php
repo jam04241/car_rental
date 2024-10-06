@@ -29,8 +29,8 @@ if (!isset($_SESSION['email'])) {
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="support.php">CUSTOMER SERVICE</a></li>
-                            <li><a id="dropdown2" href="vehicle.php">VEHICLE CATEGORY</a></li>
+                            <li><a id="dropdown1" href="../Services/Cust_Serv.php">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
                         </ul>
                     </li>
                     <li><a href="../Contact/Contact.php">CONTACT</a>

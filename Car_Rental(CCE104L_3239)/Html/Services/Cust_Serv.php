@@ -30,7 +30,7 @@ if (!isset($_SESSION['email'])) {
                     <a href="#" id="Service">SERVICES</a>
 
                         <ul class="drop_service">
-                            <li><a id="dropdown1" href="/html/Service/">CUSTOMER SERVICE</a></li>
+                            <li><a id="dropdown1" href="../Services/Cust_Serv.php">CUSTOMER SERVICE</a></li>
                             <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
                         </ul>
 
