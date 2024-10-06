@@ -101,21 +101,11 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 }
 
 
-.main2 {
+.main3 {
     display: flex;
     justify-content: space-evenly;
     padding: 20px; 
 
-}
-
-.container, .sp_container{
-    display: flex;
-    height: 100%;
-    width: 47%;
-    background-color: rgba(1, 27, 33, 1);
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: 3%;
 }
 
 .cl-id, .sp-id, .payment-method  {
@@ -129,19 +119,6 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     margin-top: 5px;
 }
 
-.cl_rent input, button {
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;  
-    align-items: center;   
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    margin-left: 25%;
-
-}
-
-
 .pick{
     width: 50%;
     font-size: 20px;
@@ -153,17 +130,6 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     margin-bottom: 5px;
     margin-top: 5px;
     
-}
-
-.supporting_id input, button {
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;  
-    align-items: center;   
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    margin-left: 25%;
 }
 
 .payment_container {

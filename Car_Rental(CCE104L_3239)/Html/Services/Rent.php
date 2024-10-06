@@ -40,7 +40,7 @@ if (!isset($_SESSION['email'])) {
                             <img id="profile_icon" src="../Photos/png_account.svg">
                     </a>
                         <ul class="drop_profile">
-                            <li><a id="dropdown3" href="#" >Jam04241</a></li>
+                            <li><a id="dropdown3" href="#" ><?php echo htmlspecialchars($_SESSION['email']);?></a></li>
                             <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
                         </ul>
                     
@@ -49,47 +49,25 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
         <div class="main2">
-            <div class="container">  
-                <div class="cl_rent">
-                        <form>
-                            <p class="cl-id">Client Rental Information:</p>
-                            <input type="text" id="valid" name="valid" placeholder="VALID ID:"><br>
-
-                            <input type="text" id="license" name="license" placeholder="LICENSE:"><br>
-                            
-                            <input type="text" id="type" name="type" placeholder="TYPE:"><br>
-                            
-                            <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:"><br>
-                            
-                            <p class="pick">Pick up date:</p>
-                            <input type="date" id="pick_date" name="pick_date" placeholder="Pick up date"><br>
-
-                            <p class="pick">Return date:</p>
-                            <input type="date" id="return_date" name="return_date" placeholder="Return date"><br>
-                            
-                            <button class="submit">NEXT</button>
-                        </form>
-                </div>
-            </div>
+            <!-- CL2-->
 
             <div class="sp_container">
                 <div class="supporting_id">
-                        <form action="../DATABASE/ref_info_query.php" method="POST">
+                        <form action="../DATABASE/client_transact.php" method="POST">
                             <p class="sp-id">Supporting Identification:</p>
 
-                            <input type="text" id="full_name" name="full_name" placeholder="FULL NAME:"><br>
+                            <input type="text" id="full_name" name="full_name" placeholder="FULL NAME:" autocomplete="off" required><br>
                             
-                            <input type="text" id="valid" name="valid" placeholder="VALID ID 1:"><br>
+                            <input type="text" id="valid1" name="valid1" placeholder="VALID ID 1:" autocomplete="off" required><br>
 
-                            <input type="text" id="valid" name="valid" placeholder="VALID ID 2:"><br>
+                            <input type="text" id="valid2" name="valid2" placeholder="VALID ID 2:" autocomplete="off" required><br>
 
-                            <input type="text" id="affiliation" name="affiliation" placeholder="AFFILIATION:"><br>
+                            <input type="text" id="affiliation" name="affiliation" placeholder="AFFILIATION:" autocomplete="off" required><br>
                             
-                            <input type="text" id="address" name="address" placeholder="ADDRESS:"><br>
+                            <input type="text" id="address" name="address" placeholder="ADDRESS:" autocomplete="off" required><br>
                             
-                            <input type="number" id="contact number" name="contact number" placeholder="CONTACT NUMBER:"><br>
+                            <input type="number" id="contact_no" name="contact_no" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
                             
-                            <button class="submit">NEXT</button>
                         </form>
                 </div>
             </div>
@@ -98,12 +76,12 @@ if (!isset($_SESSION['email'])) {
         <div class="main3">
             <div class="payment_container">
                 <div class="payment">
-                    <form>
+                    <form  action="../DATABASE/client_payment_query.php" method="POST">
                         <p class="payment-method">Payment:</p>             
-                        <input type="number" id="downpayment" name="downpayment" placeholder="DOWNPAYMENT:"><br>
+                        <input type="number" id="downp" name="downp" placeholder="DOWNPAYMENT:" autocomplete="off" required><br>
 
-                                <label for="payment-mode"></label></form>                     
-                                <select id="payment-mode" name="payment-mode">
+                                <label for="modeofpay"></label></form>                     
+                                <select id="modeofpay" name="modeofpay" autocomplete="off" required>
                                     <option value="" disabled selected>Select Payment Mode</option>
                                     <option value="e-pay">E-pay</option>
                                     <option value="cash">Cash</option>

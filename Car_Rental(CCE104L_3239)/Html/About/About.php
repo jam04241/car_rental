@@ -41,7 +41,7 @@ if (!isset($_SESSION['email'])) {
                             <img id="profile_icon" src="../Photos/png_account.svg">
                     </a>
                         <ul class="drop_profile">
-                            <li><a id="dropdown3" href="#" >Jam04241</a></li>
+                            <li><a id="dropdown3" href="#" ><?php echo htmlspecialchars($_SESSION['email']);?></a></li>
                             <li><a id="dropdown4" href="../DATABASE/logout.php">Log Out</a></li>
                         </ul>
                     
