@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+}
+:root {
+    font-size: 18px;
+}
+ul{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+    
+}
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 65px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 20px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+
+/*form designing*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form{
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(1, 27, 33, 1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    left: 30%;
+    top: 60px;
+    
+}
+.form h1 {
+    display: flex;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    align-items: center;
+    position: relative;
+    margin-left: 55%;
+    top: 90px;
+    color: #ffffff;
+
+}
+
+p{
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    align-items: center;
+    position: relative;
+    margin-left: 62%;
+    top: 90px;
+    color: #ffffff;
+}
+
+.form input{
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    margin-top: 40px;   
+    margin-left: 24%;
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    text-align: auto;
+    color:black;
+    
+}
+
+
+.submit{
+    width: 15%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.icon-container {
+    display: flex;               
+    gap: 0%;             
+    margin-left: 13%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    
+
+}
+
+.icon-container i {
+    font-size: 40px;
+}
+
+
+
+textarea {
+    color:black;
+    resize: none;   
+    margin-top: 17%;
+    margin-left: 24%;
+    width: 50%;
+    height: 100px;
+}
+
+
+
+  
