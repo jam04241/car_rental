@@ -53,14 +53,19 @@ if (!isset($_SESSION['email'])) {
             <div class="form">
                 <h1>We are available 24/7</h1>
                 <p>Explore our help Docs or Contact Us</p>
-                <input type="text" id="email" name="name"placeholder="Enter Email" autocomplete="off" required>
+                <form action="../DATABASE/cust_service.php" method="POST">
+                <input type="text" id="name" name="name"placeholder="Fullname" autocomplete="off" required>
+                <input type="text" id="addrss" name="addrss"placeholder="Address" autocomplete="off" required>
+                <input type="number" id="contact no" name="contact no"placeholder="Contact No" autocomplete="off" required>
                 <textarea type="text" id="message" name="message"placeholder="Message"></textarea>
                 <button class="submit">Click to Submit</button>
+                
                     <div class="icon-container">
                         <a href="https://web.facebook.com/Ramssukasaha"><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-solid fa-phone"></i></a>
                         <a href="https://mail.google.com/mail/u/0/?hl=en-GB#sent"><i class="fa-solid fa-envelope"></i></a>
                     </div>
+                </form>
             </div>
             
     </div>

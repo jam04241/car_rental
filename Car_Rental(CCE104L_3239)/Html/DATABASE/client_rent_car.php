@@ -1,7 +1,8 @@
 <?php
+session_start();
 // tbl_rent_car
 $valid = $_POST['valid']; // valid_id
-$licence = $_POST['licence']; // licence_no
+$license = $_POST['license']; // licence_no
 $type = $_POST['type']; // car_type
 $vehicle = $_POST['vehicle']; // Vehicle
 $pick_date = $_POST['pick_date']; // date_rental
@@ -18,10 +19,11 @@ try{
     $fk_ID_ACC = $stmt1->fetchColumn();
 
     // insert data in tbl_rent_car
-    $query="INSERT INTO tbl_rent_car(ID_ACC,valid_id,licence_no,car_type,Vehicle,date_rental,date_period)values(?,?,?,?,?,?,?)";
+    $query="INSERT INTO tbl_rent_car(ID_ACC,valid_id,license_no,car_type,Vehicle,date_rental,date_period)values(?,?,?,?,?,?,?)";
     $stmt= $pdo->prepare($query);
-    $stmt->execute([$fk_ID_ACC,$valid,$licence,$vehicle,$pick_date,$return_date]);
-
+    $stmt->execute([$fk_ID_ACC,$valid,$license,$type,$vehicle,$pick_date,$return_date]);
+    
+    header("Location: ../Services/rent.php");
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());

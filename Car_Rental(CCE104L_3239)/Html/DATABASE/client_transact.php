@@ -34,7 +34,7 @@ try{
     $fk_rent_no = $stmt2->fetchColumn();
 
     // insert data in tbl_support_details
-    $query1 = 'INSERT INTO tbl_support_details(ID_ACC, rent_no, ref_name, valid_id1, valid_id2, affliation, addrss, contact_no) 
+    $query1 = 'INSERT INTO tbl_support_details(ID_ACC, rent_no, ref_name, valid_id1, valid_id2, affiliation, addrss, contact_no) 
                VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 
     $stmt1=$pdo->prepare($query1);
@@ -46,7 +46,9 @@ try{
     $stmt2=$pdo->prepare($query2);
     $stmt2->execute([$fk_ID_ACC,$fk_rent_no,$modeofpay,$downp]) ;
 
+    echo "<script>alert('You Successfully Reserve a car!');</script>";
 
+    header("Location: ../Home/Home.php");
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());

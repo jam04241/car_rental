@@ -64,7 +64,7 @@ if (!isset($_SESSION['email'])) {
 
                             <input type="text" id="affiliation" name="affiliation" placeholder="AFFILIATION:" autocomplete="off" required><br>
                             
-                            <input type="text" id="address" name="address" placeholder="ADDRESS:" autocomplete="off" required><br>
+                            <input type="text" id="addrss" name="addrss" placeholder="ADDRESS:" autocomplete="off" required><br>
                             
                             <input type="number" id="contact_no" name="contact_no" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
                             
