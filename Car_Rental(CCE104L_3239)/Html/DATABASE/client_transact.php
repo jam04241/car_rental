@@ -5,7 +5,7 @@ $full_name = $_POST['full_name']; // ref_name VARCHAR(100) NOT NULL
 $valid1 = $_POST['valid1']; // valid_id1
 $valid2 = $_POST['valid2']; // valid_id2
 $affiliation = $_POST['affiliation']; // affliation
-$address = $_POST['address']; // address
+$addrss = $_POST['addrss']; // address
 $contact_no = $_POST['contact_no']; // contact_no
 
 // tbl_client_payment
@@ -26,19 +26,17 @@ try{
     $fk_ID_ACC = $stmt1->fetchColumn(); // Fetch the ID_ACC value
     
     //FOREIGN KEY FOR rent_no
-    $valid = $_SESSION["valid"];
-    $license = $_SESSION["license"];
-    $fk_query2 = "SELECT rent_no FROM tbl_rent_car WHERE valid_id = ? AND licence_no = ?";
+    $fk_query2 = "SELECT rent_no FROM tbl_rent_car WHERE ID_ACC = ?";
     $stmt2 = $pdo->prepare($fk_query2);
-    $stmt2->execute([$valid,$license]);
-    $fk_rent_no = $stmt2->fetchColumn();
+    $stmt2->execute([$fk_ID_ACC]);
+    $fk_rent_no = $stmt2->fetchColumn(); // Fetch the rent_no value
 
     // insert data in tbl_support_details
     $query1 = 'INSERT INTO tbl_support_details(ID_ACC, rent_no, ref_name, valid_id1, valid_id2, affiliation, addrss, contact_no) 
                VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 
     $stmt1=$pdo->prepare($query1);
-    $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$address,$contact_no]);
+    $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$addrss,$contact_no]);
 
     // insert data in tbl_client_payment
     $query2="INSERT INTO tbl_client_payment(ID_ACC,rent_no,Modeofpay,dp)

@@ -4,9 +4,9 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #ffffff;
+    
 }
-:root {
+:root{
     font-size: 18px;
 }
 ul{
@@ -17,14 +17,13 @@ ul{
 
 a{
     font-size: 25px;
-    color: #ffffff;
+    color: #ffff;
 }
 
 .topnav, .navbar{ 
     background-color: rgba(1, 27, 33, 1);
     display: flex;
     align-items: center;
-    
 }
 #car-logo{
     width: 13rem; /* set a fixed width */
@@ -88,95 +87,100 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     background-color: rgb(255, 0, 0);
 }
 
-
-/*form designing*/
-
-.form{
-    width: 35%;
-    height: 70vh;
-    padding: 10px;
-    background-color: rgb(5, 47, 56);
-    border-radius: 50px 50px;
+.column-content{
+    background-color: rgb(178, 126, 227);
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative; 
-    left: 30%;
-    top: 60px;
-    
-}
-.form h1 {
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-direction: row;
     text-align: justify;
-    align-items: center;
-    position: relative;
-    margin-left: 45%;
-    top: 90px;
-    color: #ffffff;
-
+    justify-content: space-around;
+    color: black;   
 }
 
-p{
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    align-items: center;
-    position: relative;
-    margin-left: 55%;
-    top: 90px;
-    color: #ffffff;
-}
-
-.form input{
-    padding: 10px;
-    width: 50%;
-    height: 60px;
-    margin-top: 40px;
-    position: relative;
-    top: 100px;
-    border-radius: 40px;
-    text-align: auto;
-    color:black;
-    
+#column-content1,#column-content2,#column-content3{
+    width: 20px;
 }
 
 
-.submit{
-    padding: 10px;
-    width: 20%;
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 27%;
+.main3{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    right:15%;
-    top: 110px;
-    background-color: black;
-    font-size: 15px;
-    border-radius: 20px;
-    
+    justify-content: space-evenly;
+    padding: 20px; 
+
 }
 
-.icon-container {
-    display: flex;           
+.cl-id, .sp-id, .payment-method  {
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px; 
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input, button {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
     justify-content: center;  
-    align-items: center;      
-    gap: -15%;             
+    align-items: center;   
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
     margin-left: 25%;
-    margin-top: 135px;
-    
-    
 
 }
 
-.icon-container i {
-    font-size: 40px;
+
+.pick{
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px; 
+    text-align: center;
+    margin-left: 25%;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+.supporting_id input, button {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;  
+    align-items: center;   
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    margin-left: 25%;
+}
+
+.payment_container {
+    display: flex;
+    height: 40%;
+    width: 40%;
+    background-color: rgba(1, 27, 33, 1);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.payment input, button, select{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;  
+    align-items: center;   
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    margin-left: 25%;
+}
+
+.payment-mode {
+    font-size: large;
+    color: aliceblue;
 }
 
 
-
-
-  

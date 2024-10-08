@@ -67,31 +67,21 @@ if (!isset($_SESSION['email'])) {
                             <input type="text" id="addrss" name="addrss" placeholder="ADDRESS:" autocomplete="off" required><br>
                             
                             <input type="number" id="contact_no" name="contact_no" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
+
+                                    <p class="payment-method">Payment:</p>             
+                                    <input type="number" id="downp" name="downp" placeholder="DOWNPAYMENT:" autocomplete="off" required><br>
+            
+                                            <label for="modeofpay"></label>                    
+                                            <select id="modeofpay" name="modeofpay" autocomplete="off" required>
+                                                <option value="" disabled selected>Select Payment Mode</option>
+                                                <option value="e-pay">E-pay</option>
+                                                <option value="cash">Cash</option>
+                                                <option value="debit-card">Debit Card</option>
+                                            </select><br>
+            
+                                    <button class="submit" name="submit">Submit</button>
                             
                         </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="main3">
-            <div class="payment_container">
-                <div class="payment">
-                    <form  action="../DATABASE/client_transact.php" method="POST">
-                        <p class="payment-method">Payment:</p>             
-                        <input type="number" id="downp" name="downp" placeholder="DOWNPAYMENT:" autocomplete="off" required><br>
-
-                                <label for="modeofpay"></label></form>                     
-                                <select id="modeofpay" name="modeofpay" autocomplete="off" required>
-                                    <option value="" disabled selected>Select Payment Mode</option>
-                                    <option value="e-pay">E-pay</option>
-                                    <option value="cash">Cash</option>
-                                    <option value="debit-card">Debit Card</option>
-                                </select><br>
-
-                        <button class="submit" name="submit">Submit</button>
-                        
-
-                    </form>
                 </div>
             </div>
         </div>

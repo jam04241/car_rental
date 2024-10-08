@@ -3,7 +3,7 @@ session_start();
 
 // tbl_client_cus_serv
 $fullname = $_POST['fullname'];
-$Contact_no = $_POST['Contact_no'];
+$contact_no = $_POST['contact_no'];
 $addrss = $_POST['addrss'];
 $msgs = $_POST['msgs'];
 

@@ -166,17 +166,7 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     margin-left: 25%;
 }
 
-.payment_container {
-    display: flex;
-    height: 40%;
-    width: 40%;
-    background-color: rgba(1, 27, 33, 1);
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: 1%;
-    margin-left: 30%;
-    margin-bottom: 5%;
-}
+
 
 .payment input, button, select{
     width: 50%;

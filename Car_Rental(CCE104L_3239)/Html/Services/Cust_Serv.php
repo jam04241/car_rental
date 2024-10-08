@@ -49,15 +49,17 @@ if (!isset($_SESSION['email'])) {
                 </li>
             </ul>
         </div>
+
+        <div class="form-container">
                 
             <div class="form">
                 <h1>We are available 24/7</h1>
                 <p>Explore our help Docs or Contact Us</p>
                 <form action="../DATABASE/cust_service.php" method="POST">
-                <input type="text" id="name" name="name"placeholder="Fullname" autocomplete="off" required>
+                <input type="text" id="fullname" name="fullname"placeholder="Fullname" autocomplete="off" required>
+                <input type="number" id="contact_no" name="contact_no"placeholder="Contact No" autocomplete="off" required>
                 <input type="text" id="addrss" name="addrss"placeholder="Address" autocomplete="off" required>
-                <input type="number" id="contact no" name="contact no"placeholder="Contact No" autocomplete="off" required>
-                <textarea type="text" id="message" name="message"placeholder="Message"></textarea>
+                <textarea type="text" id="msgs" name="msgs"placeholder="Message Here!"></textarea>
                 <button class="submit">Click to Submit</button>
                 
                     <div class="icon-container">
@@ -67,7 +69,7 @@ if (!isset($_SESSION['email'])) {
                     </div>
                 </form>
             </div>
-            
+        </div>   
     </div>
     <script src="Customer_script.js"></script>
 </body>

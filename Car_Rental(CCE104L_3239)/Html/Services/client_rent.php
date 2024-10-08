@@ -57,10 +57,24 @@ if (!isset($_SESSION['email'])) {
                             <input type="text" id="valid" name="valid" placeholder="VALID ID:" autocomplete="off" required><br>
 
                             <input type="text" id="license" name="license" placeholder="LICENSE:" autocomplete="off" required><br>
-                            
-                            <input type="text" id="type" name="type" placeholder="TYPE:" autocomplete="off" required><br>
-                            
-                            <input type="text" id="vehicle" name="vehicle" placeholder="VEHICLE:" autocomplete="off" required><br>
+
+                            <label for="vehicle-selection"></label>                    
+                                            <select id="car_type" name="car_type" autocomplete="off" required>
+                                                <option value="" disabled selected>Select Vehicle Type</option>
+                                                <option value="suv">SUV</option>
+                                                <option value="van">Van</option>
+                                                <option value="sedan">Sedan</option>
+                                                <option value="loaf">Loaf</option>
+                                            </select><br>
+                                                       
+                            <label for="vehicle-manu-selection"></label>                    
+                                            <select id="vehicle" name="vehicle" autocomplete="off" required>
+                                                <option value="" disabled selected>Preferred Manufacturer</option>
+                                                <option value="honda">Honda</option>
+                                                <option value="nissan">Nissan</option>
+                                                <option value="ford">Ford</option>
+                                                <option value="toyota">Toyota</option>
+                                            </select><br>
                             
                             <p class="pick">Pick up date:</p>
                             <input type="date" id="pick_date" name="pick_date" placeholder="Pick up date" autocomplete="off" required><br>
