@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    font-size: 18px;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+}
+
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.receipt img{
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    border-radius: 50%;
+
+}
+.receipt {
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto; 
+    background-color: rgb(224, 225, 225);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.receipt img {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+
+.receipt h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.fill {
+    font-size: 25px;
+    margin: 10px 0; 
+    text-align: left; 
+    width: 100%; 
+    padding: 5px 0; 
+    background-color: white;
+}
+
+.fill-btn{
+    padding: 10px;
+}
