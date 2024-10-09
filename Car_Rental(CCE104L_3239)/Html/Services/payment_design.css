@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    font-size: 18px;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;  
+    align-self: center;
+}
+
+a{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.topnav, .navbar{ 
+    background-color: rgba(1, 27, 33, 1);
+    display: flex;
+    align-items: center;
+}
+
+#car-logo{
+    width: 13rem; /* set a fixed width */
+    height: 125px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+#profile_icon{
+    width: 100px; /* set a fixed width */
+    height: 100px; /* set a fixed height */
+    object-fit: cover;/* ensure the image is scaled to fit the container */
+}
+
+.contact_class{
+    display: inline-block;
+    position: relative;
+}
+
+.drop_profile, .drop_service{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 27, 33, 1);
+    z-index: 999;
+    padding: 20px 20px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* This makes sure that the dropdown is displayed when the parent is hovered */
+li:hover .drop_profile, li:hover .drop_service {
+    display: block;
+}
+
+ul, li{
+    display: block;
+    background-color: rgba(1, 27, 33, 1);
+}
+
+li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    font-size: var(--font-size);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*drop down position*/
+.drop_service{
+    margin-left: -50px;
+    margin-top: 90px;
+}
+.drop_profile{
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.drop_service, #dropdown1, #dropdown2, .drop_profile, #dropdown3, #dropdown4 { 
+    text-align: center;
+    width: auto;
+}
+#dropdown1, #dropdown2, #dropdown3, #dropdown4{
+    padding-top: 0px;
+}
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover{
+    background-color: rgb(255, 0, 0);
+}
+.pay {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.payment-method-container {
+    width: 40%;
+    background-color: rgba(1, 27, 33, 1);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 160px;
+
+
+    
+}
+
+.payment-method {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.payment-method-container input, .payment-method-container select, .payment-method-container button {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    
+}
+
+.payment-method-container button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+.payment-method-container button:hover {
+    background-color: #00ff22;
+}

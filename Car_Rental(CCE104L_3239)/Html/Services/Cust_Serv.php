@@ -57,8 +57,8 @@ if (!isset($_SESSION['email'])) {
                 <p>Explore our help Docs or Contact Us</p>
                 <form action="../DATABASE/cust_service.php" method="POST">
                 <input type="text" id="fullname" name="fullname"placeholder="Fullname" autocomplete="off" required>
-                <input type="number" id="contact_no" name="contact_no"placeholder="Contact No" autocomplete="off" required>
-                <input type="text" id="addrss" name="addrss"placeholder="Address" autocomplete="off" required>
+                <input type="number" id="cust_contact_no" name="cust_contact_no"placeholder="Contact No" autocomplete="off" required>
+                <input type="text" id="cust_addrss" name="cust_addrss"placeholder="Address" autocomplete="off" required>
                 <textarea type="text" id="msgs" name="msgs"placeholder="Message Here!"></textarea>
                 <button class="submit">Click to Submit</button>
                 

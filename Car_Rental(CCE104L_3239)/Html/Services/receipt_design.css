@@ -4,12 +4,13 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    
 }
+
 :root{
     font-size: 18px;
 }
-ul{
+
+ul li{
     display: flex;
     justify-content: center;  
     align-self: center;
@@ -25,16 +26,19 @@ a{
     display: flex;
     align-items: center;
 }
+
 #car-logo{
     width: 13rem; /* set a fixed width */
     height: 125px; /* set a fixed height */
     object-fit: cover;/* ensure the image is scaled to fit the container */
 }
+
 #profile_icon{
     width: 100px; /* set a fixed width */
     height: 100px; /* set a fixed height */
     object-fit: cover;/* ensure the image is scaled to fit the container */
 }
+
 .contact_class{
     display: inline-block;
     position: relative;
@@ -70,7 +74,7 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
 /*drop down position*/
 .drop_service{
     margin-left: -50px;
-    margin-top: 65px;
+    margin-top: 90px;
 }
 .drop_profile{
     margin-left: -5px;
@@ -81,107 +85,51 @@ li,#dropdown1, #dropdown2, #dropdown3, #dropdown4{
     width: auto;
 }
 #dropdown1, #dropdown2, #dropdown3, #dropdown4{
-    padding-top: 20px;
+    padding-top: 0px;
 }
-#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover {
+#dropdown1:hover, #dropdown2:hover, #dropdown3:hover, #dropdown4:hover{
     background-color: rgb(255, 0, 0);
 }
-
-.column-content{
-    background-color: rgb(178, 126, 227);
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    justify-content: space-around;
-    color: black;   
-}
-
-#column-content1,#column-content2,#column-content3{
-    width: 20px;
-}
-
-
-.main2 {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px; 
-
-}
-
-.container, .sp_container{
-    display: flex;
-    height: 100%;
-    width: 47%;
-    background-color: rgba(1, 27, 33, 1);
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: 3%;
-}
-
-.cl-id, .sp-id, .payment-method  {
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    margin-top: 10px; 
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.cl_rent input, button {
+.receipt img{
     width: 50%;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;  
-    align-items: center;   
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
+    height: 30%;
     margin-left: 25%;
+    border-radius: 50%;
 
 }
-
-
-.pick{
+.receipt {
+    padding: 20px;
     width: 50%;
-    font-size: 20px;
-    color: white;
-    margin-top: 20px; 
-    text-align: center;
+    margin: 20px auto; 
+    background-color: rgb(224, 225, 225);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.receipt img {
+    width: 50%;
+    height: auto;
     margin-left: 25%;
-    padding: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.receipt h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
     
 }
 
-.supporting_id input, button {
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;  
-    align-items: center;   
+.fill {
+    font-size: 25px;
+    margin: 10px 0; 
+    text-align: left; 
+    width: 100%; 
+    padding: 5px 0; 
+    background-color: white;
+}
+
+.fill-btn{
     padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    margin-left: 25%;
 }
-
-
-
-.payment input, button, select{
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;  
-    align-items: center;   
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    margin-left: 25%;
-}
-
-.payment-mode {
-    font-size: large;
-    color: aliceblue;
-}
-
-

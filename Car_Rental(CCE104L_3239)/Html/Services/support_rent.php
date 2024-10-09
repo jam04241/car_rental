@@ -11,7 +11,7 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="Rent_design.css">
+    <link rel="stylesheet" href="support_rent_design.css">
     <title>RUBEN</title>
 </head>
 <body>
@@ -53,7 +53,7 @@ if (!isset($_SESSION['email'])) {
 
             <div class="sp_container">
                 <div class="supporting_id">
-                        <form action="../DATABASE/client_transact.php" method="POST">
+                        <form action="../DATABASE/client_support.php" method="POST">
                             <p class="sp-id">Supporting Identification:</p>
 
                             <input type="text" id="full_name" name="full_name" placeholder="FULL NAME:" autocomplete="off" required><br>
@@ -66,18 +66,7 @@ if (!isset($_SESSION['email'])) {
                             
                             <input type="text" id="addrss" name="addrss" placeholder="ADDRESS:" autocomplete="off" required><br>
                             
-                            <input type="number" id="contact_no" name="contact_no" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
-
-                                    <p class="payment-method">Payment:</p>             
-                                    <input type="number" id="downp" name="downp" placeholder="DOWNPAYMENT:" autocomplete="off" required><br>
-            
-                                            <label for="modeofpay"></label>                    
-                                            <select id="modeofpay" name="modeofpay" autocomplete="off" required>
-                                                <option value="" disabled selected>Select Payment Mode</option>
-                                                <option value="e-pay">E-pay</option>
-                                                <option value="cash">Cash</option>
-                                                <option value="debit-card">Debit Card</option>
-                                            </select><br>
+                            <input type="number" id="contact" name="contact" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
             
                                     <button class="submit" name="submit">Submit</button>
                             
@@ -86,6 +75,6 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
     </div>
-    <script src="Rent_script.js"></script>
+    <script src="support_rent_script.js"></script>
 </body>
 </php>

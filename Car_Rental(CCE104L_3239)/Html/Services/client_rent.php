@@ -58,6 +58,10 @@ if (!isset($_SESSION['email'])) {
 
                             <input type="text" id="license" name="license" placeholder="LICENSE:" autocomplete="off" required><br>
 
+                            <input type="number" id="rent_contact" name="rent_contact" placeholder="CONTACT NUMBER:" autocomplete="off" required><br>
+
+                            <input type="text" id="rent_addrss" name="rent_addrss" placeholder="ADDRESS:" autocomplete="off" required><br>
+
                             <label for="vehicle-selection"></label>                    
                                             <select id="car_type" name="car_type" autocomplete="off" required>
                                                 <option value="" disabled selected>Select Vehicle Type</option>

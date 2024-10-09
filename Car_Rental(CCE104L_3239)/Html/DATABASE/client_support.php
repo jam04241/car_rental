@@ -6,19 +6,18 @@ $valid1 = $_POST['valid1']; // valid_id1
 $valid2 = $_POST['valid2']; // valid_id2
 $affiliation = $_POST['affiliation']; // affliation
 $addrss = $_POST['addrss']; // address
-$contact_no = $_POST['contact_no']; // contact_no
+$contact = $_POST['contact']; // contact_no
 
 // tbl_client_payment
 $modeofpay = $_POST['modeofpay'];
 $downp = $_POST['downp'];
 
-// Foreign key for userlogin
 
 
 try{
     require"connect_db.php";
 
-    //FOREIGN KEY ID_ACC
+    //FOREIGN KEY ID_ACC for userlogin
     $email = $_SESSION['email'];
     $fk_query1 = "SELECT ID_ACC FROM tbl_userlogin WHERE email = ?";
     $stmt1 = $pdo->prepare($fk_query1);
@@ -36,17 +35,18 @@ try{
                VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 
     $stmt1=$pdo->prepare($query1);
-    $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$addrss,$contact_no]);
+    $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$addrss,$contact]);
 
-    // insert data in tbl_client_payment
+    /*// insert data in tbl_client_payment
     $query2="INSERT INTO tbl_client_payment(ID_ACC,rent_no,Modeofpay,dp)
              VALUES(?,?,?,?)";
     $stmt2=$pdo->prepare($query2);
     $stmt2->execute([$fk_ID_ACC,$fk_rent_no,$modeofpay,$downp]) ;
+    */
 
     echo "<script>alert('You Successfully Reserve a car!');</script>";
-
-    header("Location: ../Home/Home.php");
+    echo "<script>alert('Please take screenshot to your receipt!');</script>";
+    echo "<script>window.location.href='../Services/receipt.php';</script>";
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());

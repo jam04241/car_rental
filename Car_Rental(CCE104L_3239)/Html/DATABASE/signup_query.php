@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$fname=$_POST["fname"];
+$fname = $_POST["fname"];
 $lname = $_POST["lname"];
 $sex = $_POST["sex_select"];
 $email = $_POST["email"];
