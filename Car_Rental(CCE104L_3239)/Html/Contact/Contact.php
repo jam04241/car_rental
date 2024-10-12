@@ -30,7 +30,7 @@ if (!isset($_SESSION['email'])) {
 
                         <ul class="drop_service">
                             <li><a id="dropdown1" href="../Services/Cust_Serv.php">CUSTOMER SERVICE</a></li>
-                            <li><a id="dropdown2" href="#">VEHICLE CATEGORY</a></li>
+                            <li><a id="dropdown2" href="../Ciano2/services.php">VEHICLE CATEGORY</a></li>
                         </ul>
                     </li>
                     <li><a href="../Contact/Contact.php">CONTACT</a>
@@ -54,12 +54,16 @@ if (!isset($_SESSION['email'])) {
             
         <div class="icon-img2">
             <i class="fa-solid fa-headset"></i>
-            <a href=""><p class="p2">PERSONAL SUPPORT <br> . We believe in offering dedicated, one-on-one assistance to ensure that every customer feels valued and heard. Our support team is always available to help with any questions or concerns, providing timely, personalized solutions tailored to your specific needs.</p></a>  
+            <a href=""><p class="p2">PERSONAL SUPPORT <br> We believe in offering dedicated, one-on-one 
+            assistance to ensure that every customer feels valued and heard. Our support team is always available 
+            to help with any questions or concerns, providing timely, personalized solutions tailored to your specific needs.</p></a>  
         </div> 
           
         <div class="icon-img3">
             <i class="fa-solid fa-user-injured"></i>
-            <a href=""><p class="p3">INSURANCE<br> ur expert team is here to guide you through the process, helping you choose the right plan and answering any questions you may have. Trust us to deliver reliable, secure insurance services that prioritize your peace of mind at every step.</p></a>
+            <a href=""><p class="p3">INSURANCE<br> Your expert team is here to guide you through the process, 
+            helping you choose the right plan and answering any questions you may have. Trust us to deliver reliable, 
+            secure insurance services that prioritize your peace of mind at every step.</p></a>
         </div>        
     </div>
     <script src="Contact_script.js"></script>

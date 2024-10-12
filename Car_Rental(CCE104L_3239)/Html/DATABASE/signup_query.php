@@ -23,7 +23,7 @@ $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
 
         echo "<script>alert('you succesfully created an account');</script>";
         echo "<script>window.location.href='../MAIN_EXE/Login.php';</script>";
-
+        exit();
     } catch (PDOException $e) {
         // Log error and provide informative error message
         error_log("Database error: " . $e->getMessage());

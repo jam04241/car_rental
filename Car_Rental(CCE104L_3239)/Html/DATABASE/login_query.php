@@ -24,10 +24,12 @@ try {
         // Password does not match or email not found
         echo "<script>alert('Invalid email or password.');</script>";
         echo "<script>window.location.href='../MAIN_EXE/Login.php';</script>";
+        
     }
     $select =("SELECT ID_ACC from tbl_userlogin WHERE password = {$pass}");
-
     $insert =('INSERT INTO tbl_client_rent (id_acc) VALUES({$SELECT})');
+
+    exit();
 } catch (PDOException $e) {
     die("Could not connect to the database: " . $e->getMessage());
 }

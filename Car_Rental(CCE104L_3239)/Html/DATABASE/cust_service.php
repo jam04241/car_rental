@@ -23,8 +23,11 @@
         $stmt4=$pdo->prepare($query2);
         $stmt4->execute([$fk_ID_ACC, $fullname, $cust_contact_no, $cust_addrss, $msgs]);
         
+        
         echo "<script>alert('Your concern has been submitted!\nThank you for bringing this to our attention!');</script>";  
         echo "<script>window.location.href='../Home/Home.php';</script>";
+
+        
     }
         catch(PDOException $e){
             die("Could not connect to the database: " . $e->getMessage());

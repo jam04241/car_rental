@@ -26,6 +26,7 @@ try{
     $stmt->execute([$fk_ID_ACC,$valid,$license,$rent_contact,$rent_address,$car_type,$vehicle,$pick_date,$return_date]);
     
     header("Location: ../Services/payment.php");
+    exit();
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());

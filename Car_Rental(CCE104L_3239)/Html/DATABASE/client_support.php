@@ -37,16 +37,13 @@ try{
     $stmt1=$pdo->prepare($query1);
     $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$addrss,$contact]);
 
-    /*// insert data in tbl_client_payment
-    $query2="INSERT INTO tbl_client_payment(ID_ACC,rent_no,Modeofpay,dp)
-             VALUES(?,?,?,?)";
-    $stmt2=$pdo->prepare($query2);
-    $stmt2->execute([$fk_ID_ACC,$fk_rent_no,$modeofpay,$downp]) ;
-    */
+    //echo "<script>alert('You Successfully Reserve a car!');</script>";
+    //echo "<script>alert('Please take screenshot to your receipt!');</script>";
+    //echo "<script>window.location.href='../Services/receipt_copy.php';</script>";
 
-    echo "<script>alert('You Successfully Reserve a car!');</script>";
-    echo "<script>alert('Please take screenshot to your receipt!');</script>";
-    echo "<script>window.location.href='../Services/receipt.php';</script>";
+    echo "<script>alert('You successfully submitted!');</script>";
+    echo "<script>alert('Please go to our office according to the pick date!');</script>";
+    echo "<script>window.location.href='../Home/home.php';</script>";
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());
