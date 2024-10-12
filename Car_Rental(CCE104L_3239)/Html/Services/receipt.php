@@ -50,7 +50,7 @@ if (!isset($_SESSION['email'])) {
         <div class="receipt">
             <img src="../Photos/Car Logo/Ruben Car Rental(3).png" alt="car_logo" width="100%" height="100px">
             <h2>Receipt</h2>
-            <form action="../DATABASE/receipt_query_copy.php" method="POST">
+            <form action="../DATABASE/receipt_query.php" method="POST">
                 <p class="fill">Fullname: <?php echo htmlspecialchars($_SESSION['full_name_receipt']);?></p><br>
                 <p class="fill">Email: <?php echo htmlspecialchars($_SESSION['email']);?></p><br>
                 <p class="fill">Contact No: <?php echo htmlspecialchars($_SESSION['contact_receipt']);?></p><br>
@@ -60,7 +60,7 @@ if (!isset($_SESSION['email'])) {
                 <p class="fill">Pick up Date: <?php echo htmlspecialchars($_SESSION['pickdate_receipt']);?></p><br>
                 <p class="fill">Return Date: <?php echo htmlspecialchars($_SESSION['returndate_receipt']);?></p><br>
                 <p class="fill">Payment: <?php echo htmlspecialchars($_SESSION['downpay_receipt']);?></p><br>
-                <p class="fill">Payment Method: <?php echo htmlspecialchars($_SESSION['modeofpay']);?></p><br>               
+                <p class="fill">Payment Method: <?php echo htmlspecialchars($_SESSION['mop_receipt']);?></p><br>               
             </form>
                  <button class="fill-btn" ><a href="../Home/Home.php">THANK YOU</a></button>
         </div>

@@ -37,13 +37,15 @@ try{
     $stmt1=$pdo->prepare($query1);
     $stmt1->execute([$fk_ID_ACC,$fk_rent_no,$full_name, $valid1,$valid2,$affiliation,$addrss,$contact]);
 
-    //echo "<script>alert('You Successfully Reserve a car!');</script>";
-    //echo "<script>alert('Please take screenshot to your receipt!');</script>";
+    //echo "<script>alert('You successfully submitted!');</script>";
+    //echo "<script>alert('Please go to our office according to the pick date!');</script>";
     //echo "<script>window.location.href='../Services/receipt_copy.php';</script>";
 
-    echo "<script>alert('You successfully submitted!');</script>";
-    echo "<script>alert('Please go to our office according to the pick date!');</script>";
-    echo "<script>window.location.href='../Home/home.php';</script>";
+    include('../DATABASE/receipt_query.php');
+
+    echo "<script>alert('You Successfully Reserve a car!');</script>";
+    echo "<script>alert('Please take screenshot to your receipt!');</script>";
+    echo "<script>window.location.href='../Services/receipt.php';</script>";
 }
     catch(PDOException $e){
         die("Could not connect to the database: " . $e->getMessage());
