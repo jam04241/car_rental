@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+#email{
+    margin-top: -40%;
+}
+
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#car_logo{
+    width: 30ch;
+    height: 30ch;
+    object-fit: cover;
+}
+.checkbox{
+    margin-left: -30px;
+}
+.bgvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Sends the video behind the overlay and content */
+    overflow: hidden;
+}
+
+.bgvideo video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centers the video */
+    object-fit: cover;        /* Ensures the video covers the entire viewport */
+}
+h1,#remember,#forget,#login,#dont,a{
+    color:#ffff
+}
+#login{
+    text-decoration: none;
+}
+/* Dark overlay */
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: -1; /* Behind the content but above the video */
+}
+
+.log-box{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    padding-bottom: 70px;
+    height: 30rem;
+    background-color: rgba(1, 27, 33, 0.8);  /* Semi-transparent */
+    z-index: 1; /* Ensure this is above the overlay */
+    box-shadow: 10px 8px;
+}
+section{
+    padding: 20px 40px 0px 40px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, input, label,#dont, a{ 
+    align-self: center;
+    height: 1rem; 
+    border-radius: 1rem;
+}
+#forget{
+    margin-left: 4.5vh;
+}
+input{
+    color: #ffff;
+    margin-top: 10px;
+    background-color: rgba(8, 71, 83, 0.8);
+}
+input::placeholder{
+    color: #ffff;
+}
+
+#email, #pass{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#remember{
+    margin-top: 1px;
+    margin-left: 1.4rem;
+}
+
+#login-container{
+    
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Add some margin to the top */
+    cursor: pointer;
+    align-self: center;
+}
+
+#btn{
+    background-color: rgba(70, 114, 123, 0.8);
+    height: 40px;
+    width: 20vh;
+    border-radius: 1rem;
+    transition: background-color 0.3s; 
+}
+#btn:hover{
+    background-color: rgb(26, 3, 3);
+}

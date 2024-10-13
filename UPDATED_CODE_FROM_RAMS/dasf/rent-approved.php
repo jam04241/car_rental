@@ -14,7 +14,8 @@
             </div>
             <li><a href="Admin-user-update.html">USER-UPDATE</a></li>
                 <li><a href="user-reports.html">USER-REPORTS</a></li>
-                <li><a href="/rent-approved.html">APPROVAL RENT</a></li>
+                <li><a href="rent-approved.html">APPROVAL RENT</a></li>
+                <li><a href="rent-approved.html">LOG-OUT</a></li>
         </ul>
         <div class="main2">
                 <div class="Tbls-container">
