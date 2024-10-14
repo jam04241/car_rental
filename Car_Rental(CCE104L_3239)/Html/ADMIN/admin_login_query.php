@@ -16,13 +16,14 @@ try {
 
     if($pass == $mypass){
         echo "<script>alert('Welcome ADMIN!');</script>";
-        echo "<script>window.location.href = 'Admin-user-update.php';</script>";
+        echo "<script>window.location.href = 'admin-user-update.php';</script>";
     }
     else{
         echo "<script>alert('invalid credentials');</script>";
         echo "<script>window.location.href = 'adminlogin.php';</script>";
 
     }
+
     exit();
 } catch (PDOException $e) {
     die("Could not connect to the database: " . $e->getMessage());

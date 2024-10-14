@@ -25,7 +25,7 @@
             <input type="email" name="email" placeholder="Enter Email" autocomplete="off" required><br>
             <input type="password" id="pass" name="pass" placeholder="Create Password" autocomplete="off" required><br>
             <input type="password" id="con_pass"name="con_pass" placeholder="Confirm Password" autocomplete="off" required>
-            <button class="btn" id="confirm" name="confirm"><a href="login.php">Confirm</a></button><br>
+            <button class="btn" id="confirm" name="confirm">Confirm</button><br>
             <a href="login.php" id="Login_in">Back to Login</a>
             </form>
 

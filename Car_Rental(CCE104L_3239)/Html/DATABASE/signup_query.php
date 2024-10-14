@@ -20,9 +20,11 @@ $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
 
         // Execute SQL query
         $stmt->execute([$fname,$lname, $sex, $email, $pass_hash,$pass]);
-
-        echo "<script>alert('you succesfully created an account');</script>";
+        
+        //echo "<script>window.location.href='../MAIN_EXE/signUp.php';</script>";
+        echo "<script>alert('You succesfully created an account');</script>";
         echo "<script>window.location.href='../MAIN_EXE/Login.php';</script>";
+        
         exit();
     } catch (PDOException $e) {
         // Log error and provide informative error message

@@ -1,30 +1,27 @@
 <?php
-session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location:adminlogin.php");
-    exit();
-}
+
 include("connect_db.php");
 ?>
+
 <!DOCTYPE php>
-<html lang="en">    
+<php lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="../ADMIN/admin_css/admin-style.css">
     <title>Admin Server</title>
 </head> 
 <body>
     <div class="main"> 
         <ul class="navbar">
             <div class="logo">
-                <img src="Ruben Car Rental(3).png" alt="Car-logo">
+                <img src="../ADMIN/admin_pictures/Ruben Car Rental(3).png" alt="Car-logo">
             </div>
                 <li><a href="Admin-user-update.php">USER-UPDATE</a></li>
                 <li><a href="user-reports.php">USER-REPORTS</a></li>
                 <li><a href="client_pay.php">CLIENT-PAY</a></li>
                 <li><a href="rent-approved.php">APPROVAL RENT</a></li>
-                <li><a href="logout.php">LOG-OUT</a></li>
+                <li><a href="adminlogin.php">LOG-OUT</a></li>
          </ul>
 
          <div class="main2">

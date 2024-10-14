@@ -1,30 +1,28 @@
 <?php
-session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location:adminlogin.php");
-    exit();
-}
+
 include("connect_db.php");
+
 ?>
+
 <!DOCTYPE php>
 <php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="../ADMIN/admin_css/admin-style.css">
     <title>Admin Server</title>
 </head>
 <body>
     <div class="main">
         <ul class="navbar">
             <div class="logo">
-                <img src="Ruben Car Rental(3).png" alt="Car-logo">
+                <img src="../ADMIN/admin_pictures/Ruben Car Rental(3).png" alt="Car-logo">
             </div>
             <li><a href="Admin-user-update.php">USER-UPDATE</a></li>
                 <li><a href="user-reports.php">USER-REPORTS</a></li>
                 <li><a href="client_pay.php">CLIENT-PAY</a></li>
                 <li><a href="rent-approved.php">APPROVAL RENT</a></li>
-                <li><a href="logout.php">LOG-OUT</a></li>
+                <li><a href="adminlogin.php">LOG-OUT</a></li>
         </ul>
         <div class="main2">
                 <div class="Tbls-container">
@@ -34,22 +32,18 @@ include("connect_db.php");
                 <table>
                         <thead>
                             <tr>
-                                <th>rent_no</th>
+                                <th>Reference No</th>
                                 <th>ID ACC</th>
-                                <th>Valid Id</th>
-                                <th>License No</th>
-                                <th>Contact No</th>
-                                <th>Address</th>
-                                <th>Car Type</th>
-                                <th>Vehicle</th>
-                                <th>Date Rental</th>
-                                <th>Date Period</th>
+                                <th>Rent No</th>
+                                <th>Mode of Pay</th>
+                                <th>Down Payment</th>
+                                
                                 
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $queryuser = "SELECT rent_no, ID_ACC, valid_id, license_no, contact_no, addrss, car_type, Vehicle, date_rental, date_period FROM tbl_rent_car;";
+                            $queryuser = "SELECT reference_no,ID_ACC,rent_no, modeofpay, dp FROM tbl_client_payment;";
                             $stmt= $pdo->prepare($queryuser);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
@@ -58,16 +52,12 @@ include("connect_db.php");
                                 foreach($result as $row){
                                     ?>
                                     <tr>
-                                        <td><?= $row['rent_no']; ?></td>
+                                        <td><?= $row['reference_no']; ?></td>
                                         <td><?= $row['ID_ACC']; ?></td>
-                                        <td><?= $row['valid_id']; ?></td>
-                                        <td><?= $row['license_no']; ?></td>
-                                        <td><?= $row['contact_no']; ?></td>
-                                        <td><?= $row['addrss']; ?></td>
-                                        <td><?= $row['car_type']; ?></td>
-                                        <td><?= $row['Vehicle']; ?></td>
-                                        <td><?= $row['date_rental']; ?></td>
-                                        <td><?= $row['date_period']; ?></td>
+                                        <td><?= $row['rent_no']; ?></td>
+                                        <td><?= $row['modeofpay']; ?></td>
+                                        <td><?= $row['dp']; ?></td>
+                                      
                                         
                                     </tr>
                                     <?php

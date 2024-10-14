@@ -1,4 +1,3 @@
-
 <!DOCTYPE php>
 <php lang="en">
 <head>
@@ -8,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>RUBEN</title>
-    <link rel="stylesheet" href="adminlogin_design.css">
+    <link rel="stylesheet" href="../ADMIN/admin_css/adminlogin_design.css">
     
 </head>
 <body>
@@ -22,7 +21,7 @@
 
         <div class="log-box">
             <div class="logo-wrapper">
-                <img id="car_logo" src="Ruben_Car_Rental(7).png">
+                <img id="car_logo" src="../ADMIN/admin_pictures/Ruben_Car_Rental(7).png">
             </div>
             <section>
                 <form action="admin_login_query.php" method="POST">
