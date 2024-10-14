@@ -73,7 +73,7 @@ include("connect_db.php");
                             else{
                                 ?>
                                 <tr>
-                                    <td colspan="4">NO RECORD FOUND</td>
+                                    <td colspan="10">NO RECORD FOUND</td>
                                 </tr>
                                 <?php
 
